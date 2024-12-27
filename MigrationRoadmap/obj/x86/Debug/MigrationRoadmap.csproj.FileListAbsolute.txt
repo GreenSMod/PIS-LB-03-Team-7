@@ -1,0 +1,9 @@
+C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\bin\Debug\WindowsApplication.exe.config
+C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\bin\Debug\WindowsApplication.exe
+C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\bin\Debug\WindowsApplication.pdb
+C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.csproj.AssemblyReference.cache
+C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.Properties.Resources.resources
+C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.csproj.GenerateResource.cache
+C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.csproj.CoreCompileInputs.cache
+C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\WindowsApplication.exe
+C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\WindowsApplication.pdb
