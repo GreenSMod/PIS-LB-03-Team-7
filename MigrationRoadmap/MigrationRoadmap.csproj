@@ -62,17 +62,41 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountForm.Designer.cs">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ApplicationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ApplicationsForm.Designer.cs">
+      <DependentUpon>ApplicationsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\MigrationSpecialistConsiderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MigrationSpecialistConsiderForm.Designer.cs">
+      <DependentUpon>MigrationSpecialistConsiderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\RepatriateMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\RepatriateMainForm.Designer.cs">
       <DependentUpon>RepatriateMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ServicesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ServicesForm.Designer.cs">
+      <DependentUpon>ServicesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\AdministratorModel.cs" />
     <Compile Include="Models\ApplicationModel.cs" />
@@ -95,6 +119,9 @@
     <Compile Include="ViewModels\ServicesViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\AccountForm.resx">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

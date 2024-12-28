@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MigrationRoadmap.Models;
+using MigrationRoadmap.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,22 @@ namespace MigrationRoadmap.Forms
 {
 	public partial class RepatriateMainForm : Form
 	{
-		public RepatriateMainForm()
+		private RepatriateViewModel repatriateViewModel;
+
+		public RepatriateMainForm(UserModel user)
 		{
 			InitializeComponent();
+			repatriateViewModel = new RepatriateViewModel(user.Id);
+		}
+
+		private void buttonApplyApplicationRelocation_Click(object sender, EventArgs e)
+		{
+			repatriateViewModel.ApplyApplication(ServiceType.RelocationProgram);
+		}
+
+		private void buttonApplyApplicationCompensation_Click(object sender, EventArgs e)
+		{
+			repatriateViewModel.ApplyApplication(ServiceType.CompensationExpenses);
 		}
 	}
 }

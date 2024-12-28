@@ -49,7 +49,13 @@ namespace MigrationRoadmap
 			switch (user.Role)
 			{
 				case RoleName.Repatriate:
-					roleForm = new RepatriateMainForm();
+					roleForm = new RepatriateMainForm(user);
+					break;
+				case RoleName.MigrationSpecialist:
+					roleForm = new MigrationSpecialistConsiderForm();
+					break;
+				case RoleName.Administrator:
+					roleForm = new ServicesForm();
 					break;
 			}
 

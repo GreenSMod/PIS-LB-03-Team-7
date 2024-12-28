@@ -9,24 +9,24 @@ namespace MigrationRoadmap.ViewModels
 {
 	internal class AccountViewModel
 	{
-		private List<UserModel> users;
+		private UserModel user;
 
-		public AccountViewModel()
+		public AccountViewModel(int userId)
+		{
+			// Загрузить пользователя по Id
+		}
+
+		public void GetAccountInfo()
 		{
 
 		}
 
-		public void GetAccountInfo(int userId)
+		public void UpdateEmail(string newEmail)
 		{
 
 		}
 
-		public void UpdateEmail(int userId, string newEmail)
-		{
-
-		}
-
-		public void UpdatePassword(int userId, string newPassword)
+		public void UpdatePassword(string newPassword)
 		{
 
 		}

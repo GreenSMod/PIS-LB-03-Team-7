@@ -21,3 +21,4 @@ C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\bin\Debug\Newtonsof
 C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\bin\Debug\Newtonsoft.Json.xml
 C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.Forms.RepatriateMainForm.resources
 C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\Migratio.DF03C9D7.Up2Date
+C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.Forms.AccountForm.resources
