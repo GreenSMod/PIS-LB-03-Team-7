@@ -1,0 +1,59 @@
+﻿using MigrationRoadmap.Forms;
+using MigrationRoadmap.Models;
+using MigrationRoadmap.ViewModels;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace MigrationRoadmap
+{
+	public partial class LoginForm : Form
+	{
+		private LoginViewModel loginViewModel;
+
+		public LoginForm()
+		{
+			InitializeComponent();
+			loginViewModel = new LoginViewModel();
+		}
+
+		private void buttonLogin_Click(object sender, EventArgs e)
+		{
+			string email = emailField.Text;
+			string password = passField.Text;
+
+			var user = loginViewModel.Authenticate(email, password);
+
+			if (user != null)
+			{
+				openRoleBasedForm(user);
+			}
+			else
+			{
+				MessageBox.Show("Неверный email или пароль.");
+			}
+		}
+
+		private void openRoleBasedForm(UserModel user)
+		{
+			this.Hide();
+
+			Form roleForm = null;
+
+			switch (user.Role)
+			{
+				case RoleName.Repatriate:
+					roleForm = new RepatriateMainForm();
+					break;
+			}
+
+			roleForm.Show();
+		}
+	}
+}

@@ -7,3 +7,17 @@ C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\Mig
 C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.csproj.CoreCompileInputs.cache
 C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\WindowsApplication.exe
 C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\WindowsApplication.pdb
+C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\bin\Debug\WindowsApplication.exe.config
+C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\bin\Debug\WindowsApplication.exe
+C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\bin\Debug\WindowsApplication.pdb
+C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.csproj.AssemblyReference.cache
+C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.Properties.Resources.resources
+C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.csproj.GenerateResource.cache
+C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.csproj.CoreCompileInputs.cache
+C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\WindowsApplication.exe
+C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\WindowsApplication.pdb
+C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.LoginForm.resources
+C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\bin\Debug\Newtonsoft.Json.dll
+C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\bin\Debug\Newtonsoft.Json.xml
+C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.Forms.RepatriateMainForm.resources
+C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\Migratio.DF03C9D7.Up2Date
