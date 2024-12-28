@@ -9,7 +9,7 @@ namespace MigrationRoadmap.ViewModels
 {
 	internal class RepatriateViewModel
 	{
-		private RepatriateModel repatriate;
+		public RepatriateModel Repatriate { get; private set; }
 
 		public RepatriateViewModel(int userId)
 		{

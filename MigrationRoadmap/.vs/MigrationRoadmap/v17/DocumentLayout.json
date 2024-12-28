@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\ivan\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\accountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\accountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\ivan\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\repatriatemainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\repatriatemainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\ivan\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\viewmodels\\accountviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:viewmodels\\accountviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\ivan\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\viewmodels\\repatriateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:viewmodels\\repatriateviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\ivan\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\ivan\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\accountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\accountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\ivan\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\models\\applicationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:models\\applicationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\ivan\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\accountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\accountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\ivan\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\viewmodels\\accountviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:viewmodels\\accountviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\ivan\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\repatriatemainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\repatriatemainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\ivan\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 182,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,86 +53,97 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RepatriateViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\ViewModels\\RepatriateViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\RepatriateViewModel.cs",
-              "ToolTip": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\ViewModels\\RepatriateViewModel.cs",
-              "RelativeToolTip": "ViewModels\\RepatriateViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T20:47:18.21Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AccountViewModel.cs",
               "DocumentMoniker": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\ViewModels\\AccountViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AccountViewModel.cs",
               "ToolTip": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\ViewModels\\AccountViewModel.cs",
               "RelativeToolTip": "ViewModels\\AccountViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAADAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T20:13:27.21Z",
+              "WhenOpened": "2024-12-28T22:14:11.79Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\LoginForm.cs",
-              "RelativeToolTip": "Forms\\LoginForm.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T20:46:40.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ApplicationModel.cs",
-              "DocumentMoniker": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Models\\ApplicationModel.cs",
-              "RelativeDocumentMoniker": "Models\\ApplicationModel.cs",
-              "ToolTip": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Models\\ApplicationModel.cs",
-              "RelativeToolTip": "Models\\ApplicationModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T19:36:23.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AccountForm.cs",
               "DocumentMoniker": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\AccountForm.cs",
               "RelativeDocumentMoniker": "Forms\\AccountForm.cs",
               "ToolTip": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\AccountForm.cs",
               "RelativeToolTip": "Forms\\AccountForm.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAASwBAAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T18:57:39.56Z",
+              "WhenOpened": "2024-12-28T21:55:16.883Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "AccountForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\AccountForm.cs",
+              "RelativeDocumentMoniker": "Forms\\AccountForm.cs",
+              "ToolTip": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\AccountForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Forms\\AccountForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T21:55:09.861Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\LoginForm.cs",
+              "RelativeToolTip": "Forms\\LoginForm.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAqwD0AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T21:52:53.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "RepatriateMainForm.cs",
               "DocumentMoniker": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.cs",
               "RelativeDocumentMoniker": "Forms\\RepatriateMainForm.cs",
               "ToolTip": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.cs",
               "RelativeToolTip": "Forms\\RepatriateMainForm.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAABOAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAiwBQAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T19:12:02.111Z",
+              "WhenOpened": "2024-12-28T21:26:06.104Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RepatriateViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\ViewModels\\RepatriateViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RepatriateViewModel.cs",
+              "ToolTip": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\ViewModels\\RepatriateViewModel.cs",
+              "RelativeToolTip": "ViewModels\\RepatriateViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T21:25:54.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RepatriateMainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.cs",
+              "RelativeDocumentMoniker": "Forms\\RepatriateMainForm.cs",
+              "ToolTip": "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Forms\\RepatriateMainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T21:23:57.974Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             }
           ]
         },

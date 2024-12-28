@@ -20,6 +20,7 @@ namespace MigrationRoadmap.Forms
 		{
 			InitializeComponent();
 			repatriateViewModel = new RepatriateViewModel(user.Id);
+			emailLabel.Text = user.Email;
 		}
 
 		private void buttonApplyApplicationRelocation_Click(object sender, EventArgs e)
@@ -30,6 +31,25 @@ namespace MigrationRoadmap.Forms
 		private void buttonApplyApplicationCompensation_Click(object sender, EventArgs e)
 		{
 			repatriateViewModel.ApplyApplication(ServiceType.CompensationExpenses);
+		}
+
+		private void buttonAccountInfo_Click(object sender, EventArgs e)
+		{
+			accInfoPanel.Visible = !accInfoPanel.Visible;
+		}
+
+		private void buttonLogout_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			var loginForm = new LoginForm();
+			loginForm.Show();
+		}
+
+		private void buttonChangeAccInfo_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			var loginForm = new AccountForm(repatriateViewModel.Repatriate);
+			loginForm.Show();
 		}
 	}
 }
