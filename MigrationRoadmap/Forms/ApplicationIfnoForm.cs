@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MigrationRoadmap.Forms
 {
-	public partial class ApplicationsForm : Form
+	public partial class ApplicationIfnoForm : Form
 	{
-		public ApplicationsForm()
+		public ApplicationIfnoForm()
 		{
 			InitializeComponent();
 		}

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace MigrationRoadmap.Forms
 {
@@ -21,6 +22,7 @@ namespace MigrationRoadmap.Forms
 			InitializeComponent();
 			repatriateViewModel = new RepatriateViewModel(user);
 			emailLabel.Text = user.Email;
+			CreateDynamicButtons();
 		}
 
 		private void buttonApplyApplicationRelocation_Click(object sender, EventArgs e)
@@ -50,6 +52,40 @@ namespace MigrationRoadmap.Forms
 			this.Hide();
 			var loginForm = new AccountForm(repatriateViewModel.Repatriate);
 			loginForm.Show();
+		}
+
+
+
+		private void CreateDynamicButtons()
+		{
+			var applications = repatriateViewModel.Repatriate.Applications;
+
+			if (applications != null)
+			{
+				applications = applications.Where(app => app.ApplicationStatus == ApplicationStatus.UnderConsideration).ToList();
+
+				foreach (var application in applications)
+				{
+					Button button = new Button();
+					button.Text = Text = $"Заявка #{application.Id} ({application.ServiceType})";
+					button.Dock = DockStyle.Top;
+					button.Height = 40;
+					button.Click += buttonApllication_Click;
+
+					this.Controls.Add(button);
+					activeApplications.Controls.Add(button);
+				}
+			}
+		}
+
+		private void buttonApllication_Click(object sender, EventArgs e)
+		{
+			var button = (Button)sender;
+			if (button != null)
+			{
+				var applicationInfoForm = new ApplicationIfnoForm();
+				applicationInfoForm.Show();
+			}
 		}
 	}
 }

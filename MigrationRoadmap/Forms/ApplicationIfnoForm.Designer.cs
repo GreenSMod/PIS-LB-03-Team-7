@@ -1,6 +1,6 @@
 ﻿namespace MigrationRoadmap.Forms
 {
-	partial class ApplicationsForm
+	partial class ApplicationIfnoForm
 	{
 		/// <summary>
 		/// Required designer variable.

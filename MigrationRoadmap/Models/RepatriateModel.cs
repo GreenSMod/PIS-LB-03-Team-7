@@ -10,7 +10,7 @@ namespace MigrationRoadmap.Models
 {
 	public class RepatriateModel : UserModel
 	{
-		private readonly List<ApplicationModel> Applications;
+		public readonly List<ApplicationModel> Applications;
 
 		public RepatriateModel(UserModel user) : base(user.Id, user.Email, user.Password, user.FullName, user.Role, user.Passport)
 		{
