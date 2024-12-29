@@ -81,7 +81,7 @@ namespace MigrationRoadmap
             this.MaximizeBox = false;
             this.Name = "LoginForm";
             this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "АВТОРИЗАЦИЯ";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -92,6 +92,8 @@ namespace MigrationRoadmap
 
         private void ReinitializeComponent()
         {
+            this.Location = new Point(200, 200);
+
             this.emailField.Location = new Point()
             {
                 X = (this.Width - this.emailField.Width) / 2,

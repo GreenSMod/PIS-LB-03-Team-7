@@ -21,7 +21,6 @@ namespace MigrationRoadmap.Models
             var data = JsonConvert.DeserializeObject<List<ApplicationModel>>(json);
 
             Applications = data.FindAll(application => application.RepatriateId == user.Id);
-            Applications = null;
         }
 	}
 }

@@ -58,11 +58,11 @@ namespace MigrationRoadmap
 					break;
 			}
 
+			roleForm.Location = this.Location;
             Program.Context.MainForm = roleForm;
-
             Program.Context.MainForm.Show();
-
-			this.Close();
+            System.Threading.Thread.Sleep(1);
+            this.Close();
         }
     }
 }

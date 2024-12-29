@@ -11,14 +11,9 @@ namespace MigrationRoadmap.ViewModels
 	{
 		public RepatriateModel Repatriate { get; private set; }
 
-        private readonly UserModel User;
-
         public RepatriateViewModel(UserModel user)
 		{
-			Repatriate = new RepatriateModel(user)
-			{
-			};
-
+			Repatriate = new RepatriateModel(user) { };
         }
 
 		public void ApplyApplication(ServiceType serviceType)

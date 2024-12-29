@@ -21,8 +21,9 @@ namespace MigrationRoadmap.Forms
 		{
 			InitializeComponent();
 			repatriateViewModel = new RepatriateViewModel(user);
-			emailLabel.Text = user.Email;
-			CreateDynamicButtons();
+            nameLabel.Text = user.FullName;
+            emailLabel.Text = user.Email;
+            CreateDynamicButtons();
 		}
 
 		private void buttonApplyApplicationRelocation_Click(object sender, EventArgs e)
@@ -42,19 +43,26 @@ namespace MigrationRoadmap.Forms
 
 		private void buttonLogout_Click(object sender, EventArgs e)
 		{
-			this.Hide();
-			var loginForm = new LoginForm();
-			loginForm.Show();
-		}
+            var loginForm = new LoginForm
+            {
+                Location = this.Location
+            };
+            Program.Context.MainForm = loginForm;
+            Program.Context.MainForm.Show();
+            System.Threading.Thread.Sleep(1);
+            this.Close();
+        }
 
 		private void buttonChangeAccInfo_Click(object sender, EventArgs e)
 		{
-			this.Hide();
-			var loginForm = new AccountForm(repatriateViewModel.Repatriate);
-			loginForm.Show();
-		}
-
-
+            var accountForm = new AccountForm(repatriateViewModel.Repatriate)
+            {
+                Location = this.Location
+            };
+            accountForm.Show();
+            System.Threading.Thread.Sleep(1);
+            this.Hide();
+        }
 
 		private void CreateDynamicButtons()
 		{
@@ -66,11 +74,25 @@ namespace MigrationRoadmap.Forms
 
 				foreach (var application in applications)
 				{
-					Button button = new Button();
-					button.Text = Text = $"Заявка #{application.Id} ({application.ServiceType})";
-					button.Dock = DockStyle.Top;
-					button.Height = 40;
-					button.Click += buttonApllication_Click;
+					string f = "";
+					switch (application.ServiceType)
+					{
+                        case ServiceType.RelocationProgram:
+							f = "на запись для постановки на учёт в качестве участника Государственной программы переселения соотечественников";
+							break;
+                        case ServiceType.CompensationExpenses:
+                            f = "на компенсацию расходов по найму жилья";
+                            break;
+                    }
+
+					Button button = new Button
+					{
+						Text = Text = $"Заявка #{application.Id} {f}",
+						Dock = DockStyle.Top,
+						Height = 40,
+						Name = application.Id.ToString()
+					};
+                    button.Click += buttonApllication_Click;
 
 					this.Controls.Add(button);
 					activeApplications.Controls.Add(button);
@@ -83,9 +105,14 @@ namespace MigrationRoadmap.Forms
 			var button = (Button)sender;
 			if (button != null)
 			{
-				var applicationInfoForm = new ApplicationIfnoForm();
-				applicationInfoForm.Show();
-			}
+                var applicationInfoForm = new ApplicationInfoForm(repatriateViewModel.Repatriate.Applications.First(application => application.Id == int.Parse(button.Name)))
+                {
+                    Location = this.Location
+                };
+                applicationInfoForm.Show();
+                System.Threading.Thread.Sleep(1);
+                this.Hide();
+            }
 		}
 	}
 }
