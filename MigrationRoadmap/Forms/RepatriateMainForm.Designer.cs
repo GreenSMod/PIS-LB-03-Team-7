@@ -60,6 +60,8 @@
             // 
             // accInfoPanel
             // 
+            this.accInfoPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.accInfoPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.accInfoPanel.Controls.Add(this.nameLabel);
             this.accInfoPanel.Controls.Add(this.buttonLogout);
             this.accInfoPanel.Controls.Add(this.buttonChangeAccInfo);
