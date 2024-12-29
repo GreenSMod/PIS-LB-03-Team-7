@@ -34,7 +34,7 @@ namespace MigrationRoadmap.Forms
 			this.serviceTypeLabel = new System.Windows.Forms.Label();
 			this.statusLabel = new System.Windows.Forms.Label();
 			this.docsPanel = new System.Windows.Forms.Panel();
-			this.Docslabel = new System.Windows.Forms.Label();
+			this.DocsLabel = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// buttonReturn
@@ -77,22 +77,22 @@ namespace MigrationRoadmap.Forms
 			this.docsPanel.Size = new System.Drawing.Size(480, 445);
 			this.docsPanel.TabIndex = 6;
 			// 
-			// Docslabel
+			// DocsLabel
 			// 
-			this.Docslabel.AutoSize = true;
-			this.Docslabel.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.Docslabel.Location = new System.Drawing.Point(650, 34);
-			this.Docslabel.Name = "Docslabel";
-			this.Docslabel.Size = new System.Drawing.Size(171, 36);
-			this.Docslabel.TabIndex = 7;
-			this.Docslabel.Text = "Документы";
+			this.DocsLabel.AutoSize = true;
+			this.DocsLabel.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.DocsLabel.Location = new System.Drawing.Point(650, 34);
+			this.DocsLabel.Name = "Docslabel";
+			this.DocsLabel.Size = new System.Drawing.Size(171, 36);
+			this.DocsLabel.TabIndex = 7;
+			this.DocsLabel.Text = "Документы";
 			// 
 			// ApplicationInfoForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(984, 761);
-			this.Controls.Add(this.Docslabel);
+			this.Controls.Add(this.DocsLabel);
 			this.Controls.Add(this.docsPanel);
 			this.Controls.Add(this.statusLabel);
 			this.Controls.Add(this.serviceTypeLabel);
@@ -104,6 +104,7 @@ namespace MigrationRoadmap.Forms
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
 			this.ResumeLayout(false);
 			this.PerformLayout();
+            this.FormClosing += ApplicationInfoForm_FormClosing;
 
         }
 
@@ -118,6 +119,6 @@ namespace MigrationRoadmap.Forms
 		private Label serviceTypeLabel;
 		private Label statusLabel;
 		private Panel docsPanel;
-		private Label Docslabel;
+		private Label DocsLabel;
 	}
 }

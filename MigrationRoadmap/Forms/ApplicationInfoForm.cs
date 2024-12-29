@@ -64,13 +64,13 @@ namespace MigrationRoadmap.Forms
 			switch (statusLabel.Text)
 			{
 				case "UnderConsideration":
-					s = "на рассмотрении";
+					s = "НА РАССМОТРЕНИИ";
 					break;
 				case "Approved":
-					s = "Одобрено";
+					s = "ОДОБРЕНО";
 					break;
 				case "Rejected":
-					s = "Отклонено";
+					s = "ОТКЛОНЕНО";
 					break;
 			}
 
@@ -83,7 +83,7 @@ namespace MigrationRoadmap.Forms
 			var documents = application.Documents;
 
 			if (documents != null)
-				foreach (var document in documents)
+				foreach (var document in documents.OrderByDescending(doc => doc.Id))
 				{
 					string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $@"..\..\..\MigrationRoadmap\Data\{document.Link}");
 
