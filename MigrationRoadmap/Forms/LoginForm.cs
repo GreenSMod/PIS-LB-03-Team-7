@@ -15,20 +15,21 @@ namespace MigrationRoadmap
 {
 	public partial class LoginForm : Form
 	{
-		private LoginViewModel loginViewModel;
+		private readonly LoginViewModel loginViewModel;
 
 		public LoginForm()
 		{
 			InitializeComponent();
-			loginViewModel = new LoginViewModel();
-		}
+			ReinitializeComponent();
+            loginViewModel = new LoginViewModel();
+        }
 
 		private void buttonLogin_Click(object sender, EventArgs e)
 		{
 			string email = emailField.Text;
 			string password = passField.Text;
 
-			var user = loginViewModel.Authenticate(email, password);
+            var user = loginViewModel.Authenticate(email, password);
 
 			if (user != null)
 			{
@@ -36,20 +37,18 @@ namespace MigrationRoadmap
 			}
 			else
 			{
-				MessageBox.Show("Неверный email или пароль.");
+				MessageBox.Show("Неверный email или пароль");
 			}
 		}
 
 		private void openRoleBasedForm(UserModel user)
 		{
-			this.Hide();
-
 			Form roleForm = null;
 
 			switch (user.Role)
 			{
 				case RoleName.Repatriate:
-					roleForm = new RepatriateMainForm(user);
+                    roleForm = new RepatriateMainForm(user);
 					break;
 				case RoleName.MigrationSpecialist:
 					roleForm = new MigrationSpecialistConsiderForm();
@@ -59,7 +58,11 @@ namespace MigrationRoadmap
 					break;
 			}
 
-			roleForm.Show();
-		}
-	}
+            Program.Context.MainForm = roleForm;
+
+            Program.Context.MainForm.Show();
+
+			this.Close();
+        }
+    }
 }

@@ -12,19 +12,17 @@ namespace MigrationRoadmap.ViewModels
 {
 	internal class LoginViewModel
 	{
-		private List<UserModel> users;
+		private readonly List<UserModel> users;
 
 		public LoginViewModel()
 		{
-			//string basePath = AppDomain.CurrentDomain.BaseDirectory;
-			//string filePath = Path.Combine(basePath, "Jsons", "Users.json");
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Json\Users.json");
+            string filePath = Path.GetFullPath(path);
 
-			var filePath = "C:\\Users\\IVAN\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Jsons\\Users.json";
 			var json = File.ReadAllText(filePath);
-			var data = JsonConvert.DeserializeObject<UserModel>(json);
+			var data = JsonConvert.DeserializeObject<List<UserModel>>(json);
 
-			users = new List<UserModel>();
-			users.Add(data);
+			users = data;
 		}
 
 		public UserModel Authenticate(string email, string password)
