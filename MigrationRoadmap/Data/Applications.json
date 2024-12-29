@@ -4,6 +4,6 @@
 		"RepatriateId":0,
 		"ApplicationStatus":"UnderConsideration",
 		"ServiceType":"RelocationProgram",
-		"Documents": [1]
+		"Documents": [1, 2]
 	},
 ]
