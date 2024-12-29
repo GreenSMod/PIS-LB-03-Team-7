@@ -27,8 +27,9 @@ namespace MigrationRoadmap.Forms
         {
             InitializeComponent();
             this.Text = "ЗАЯВКА #" + application.Id.ToString();
-            //repatriateViewModel = new RepatriateViewModel(user);
-            serviceTypeLabel.Text = application.ServiceType.ToString();
+			checkPermissions();
+			//repatriateViewModel = new RepatriateViewModel(user);
+			serviceTypeLabel.Text = application.ServiceType.ToString();
 			statusLabel.Text = application.ApplicationStatus.ToString();
 			translateForUser();
 			showDocuments(application);
@@ -42,6 +43,19 @@ namespace MigrationRoadmap.Forms
             this.Hide();
             //this.Close();
         }
+
+		private void checkPermissions()
+		{
+			switch (serviceTypeLabel.Text)
+			{
+				case "RelocationProgram":
+					st = "на запись для постановки на учёт в качестве участника Государственной программы переселения соотечественников";
+					break;
+				case "CompensationExpenses":
+					st = "на компенсацию расходов по найму жилья";
+					break;
+			}
+		}
 
 		private void translateForUser()
 		{

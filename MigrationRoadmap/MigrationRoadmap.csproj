@@ -125,6 +125,9 @@
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MigrationSpecialistConsiderForm.resx">
+      <DependentUpon>MigrationSpecialistConsiderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RepatriateMainForm.resx">
       <DependentUpon>RepatriateMainForm.cs</DependentUpon>
     </EmbeddedResource>

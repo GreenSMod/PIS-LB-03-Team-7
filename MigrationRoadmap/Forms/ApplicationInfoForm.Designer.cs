@@ -34,7 +34,9 @@ namespace MigrationRoadmap.Forms
 			this.serviceTypeLabel = new System.Windows.Forms.Label();
 			this.statusLabel = new System.Windows.Forms.Label();
 			this.docsPanel = new System.Windows.Forms.Panel();
-			this.DocsLabel = new System.Windows.Forms.Label();
+			this.Docslabel = new System.Windows.Forms.Label();
+			this.button1 = new System.Windows.Forms.Button();
+			this.button2 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// buttonReturn
@@ -87,12 +89,32 @@ namespace MigrationRoadmap.Forms
 			this.DocsLabel.TabIndex = 7;
 			this.DocsLabel.Text = "Документы";
 			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(30, 601);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(150, 40);
+			this.button1.TabIndex = 8;
+			this.button1.Text = "button1";
+			this.button1.UseVisualStyleBackColor = true;
+			// 
+			// button2
+			// 
+			this.button2.Location = new System.Drawing.Point(30, 681);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(150, 40);
+			this.button2.TabIndex = 9;
+			this.button2.Text = "button2";
+			this.button2.UseVisualStyleBackColor = true;
+			// 
 			// ApplicationInfoForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(984, 761);
-			this.Controls.Add(this.DocsLabel);
+			this.Controls.Add(this.button2);
+			this.Controls.Add(this.button1);
+			this.Controls.Add(this.Docslabel);
 			this.Controls.Add(this.docsPanel);
 			this.Controls.Add(this.statusLabel);
 			this.Controls.Add(this.serviceTypeLabel);
@@ -119,6 +141,8 @@ namespace MigrationRoadmap.Forms
 		private Label serviceTypeLabel;
 		private Label statusLabel;
 		private Panel docsPanel;
-		private Label DocsLabel;
+		private Label Docslabel;
+		private Button button1;
+		private Button button2;
 	}
 }

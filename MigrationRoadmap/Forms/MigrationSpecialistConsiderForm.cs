@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MigrationRoadmap.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace MigrationRoadmap.Forms
 {
 	public partial class MigrationSpecialistConsiderForm : Form
 	{
+		private MigrationSpecialistViewModel migrationSpecialistViewModel;
+
 		public MigrationSpecialistConsiderForm()
 		{
 			InitializeComponent();
