@@ -46,15 +46,15 @@ namespace MigrationRoadmap.Forms
 
 		private void checkPermissions()
 		{
-			switch (serviceTypeLabel.Text)
-			{
-				case "RelocationProgram":
-					st = "на запись для постановки на учёт в качестве участника Государственной программы переселения соотечественников";
-					break;
-				case "CompensationExpenses":
-					st = "на компенсацию расходов по найму жилья";
-					break;
-			}
+			//switch (serviceTypeLabel.Text)
+			//{
+			//	case "RelocationProgram":
+			//		st = "на запись для постановки на учёт в качестве участника Государственной программы переселения соотечественников";
+			//		break;
+			//	case "CompensationExpenses":
+			//		st = "на компенсацию расходов по найму жилья";
+			//		break;
+			//}
 		}
 
 		private void translateForUser()
