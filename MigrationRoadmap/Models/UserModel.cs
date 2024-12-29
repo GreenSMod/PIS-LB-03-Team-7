@@ -11,13 +11,13 @@ namespace MigrationRoadmap.Models
 {
 	public class UserModel
 	{
-		public readonly int Id;
-		public readonly string Email;
-		public readonly string Password;
-		public readonly string FullName;
-		public readonly RoleName Role;
+		public int Id;
+		public string Email;
+		public string Password;
+		public string FullName;
+		public RoleName Role;
         // поля Репатрианта
-        public readonly string Passport;
+        public string Passport;
 
 
         [JsonConstructor]

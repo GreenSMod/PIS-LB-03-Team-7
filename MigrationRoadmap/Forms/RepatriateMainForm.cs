@@ -26,6 +26,12 @@ namespace MigrationRoadmap.Forms
             CreateDynamicButtons();
 		}
 
+		public void UpdateRepatriate(RepatriateModel repatriate)
+		{
+			repatriateViewModel.UpdateRepatriate(repatriate);
+			this.emailLabel.Text = repatriate.Email;
+		}
+
 		private void buttonApplyApplicationRelocation_Click(object sender, EventArgs e)
 		{
 			repatriateViewModel.ApplyApplication(ServiceType.RelocationProgram);
@@ -55,6 +61,7 @@ namespace MigrationRoadmap.Forms
 
 		private void buttonChangeAccInfo_Click(object sender, EventArgs e)
 		{
+            accInfoPanel.Visible = !accInfoPanel.Visible;
             var accountForm = new AccountForm(repatriateViewModel.Repatriate)
             {
                 Location = this.Location

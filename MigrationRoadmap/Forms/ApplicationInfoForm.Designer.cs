@@ -56,8 +56,14 @@ namespace MigrationRoadmap.Forms
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.ResumeLayout(false);
-
+            this.PerformLayout();
+            this.FormClosing += ApplicationInfoForm_FormClosing;
         }
+
+        //private void ReinitializeComponent()
+        //{
+        //    this.FormClosing += ApplicationInfoForm_FormClosing;
+        //}
 
         void ApplicationInfoForm_FormClosing(object sender, FormClosingEventArgs e)
         {

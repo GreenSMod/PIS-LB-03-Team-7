@@ -16,6 +16,11 @@ namespace MigrationRoadmap.ViewModels
 			Repatriate = new RepatriateModel(user) { };
         }
 
+		public void UpdateRepatriate(RepatriateModel repatriate)
+		{
+			Repatriate = repatriate;
+		}
+
 		public void ApplyApplication(ServiceType serviceType)
 		{
 			var application = new ApplicationModel(1, 1, ApplicationStatus.UnderConsideration, ServiceType.RelocationProgram, null);

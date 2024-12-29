@@ -17,7 +17,8 @@ namespace MigrationRoadmap.Forms
 		public ApplicationInfoForm()
 		{
 			InitializeComponent();
-		}
+            //ReinitializeComponent();
+        }
 
         public ApplicationInfoForm(ApplicationModel application)
         {
@@ -31,7 +32,8 @@ namespace MigrationRoadmap.Forms
             Program.Context.MainForm.Location = this.Location;
             Program.Context.MainForm.Show();
             System.Threading.Thread.Sleep(1);
-            this.Close();
+            this.Hide();
+            //this.Close();
         }
     }
 }
