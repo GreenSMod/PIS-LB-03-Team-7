@@ -11,20 +11,25 @@ namespace MigrationRoadmap.ViewModels
 	{
 		public RepatriateModel Repatriate { get; private set; }
 
-		public RepatriateViewModel(int userId)
+        private readonly UserModel User;
+
+        public RepatriateViewModel(UserModel user)
 		{
-			// Загрузить репатрианта по Id
-		}
+			Repatriate = new RepatriateModel(user)
+			{
+			};
+
+        }
 
 		public void ApplyApplication(ServiceType serviceType)
 		{
-			var application = new ApplicationModel
-			{
-				// Id
-				ApplicationStatus = ApplicationStatus.UnderConsideration,
-				ServiceType = serviceType
-				//Documents;
-			};
+			var application = new ApplicationModel(1, 1, ApplicationStatus.UnderConsideration, ServiceType.RelocationProgram, null);
+			//{
+			//	// Id
+			//	ApplicationStatus = ApplicationStatus.UnderConsideration,
+			//	ServiceType = serviceType
+			//	//Documents;
+			//};
 			// к репатрианту по Id добавляется заявка в Users.json
 			// сохранить заявку в Applications.json
 		}

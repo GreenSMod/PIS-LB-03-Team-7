@@ -8,6 +8,8 @@ namespace MigrationRoadmap.Models
 {
 	internal class AdministratorModel : UserModel
 	{
-		public List<ServiceModel> Services;
-	}
+		private List<ServiceModel> Services;
+
+        public AdministratorModel(UserModel user) : base(user.Id, user.Email, user.Password, user.FullName, user.Role, user.Passport) { }
+    }
 }

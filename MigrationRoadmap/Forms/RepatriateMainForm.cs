@@ -19,7 +19,7 @@ namespace MigrationRoadmap.Forms
 		public RepatriateMainForm(UserModel user)
 		{
 			InitializeComponent();
-			repatriateViewModel = new RepatriateViewModel(user.Id);
+			repatriateViewModel = new RepatriateViewModel(user);
 			emailLabel.Text = user.Email;
 		}
 

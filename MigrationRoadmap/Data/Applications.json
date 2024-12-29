@@ -1,0 +1,9 @@
+[
+	{
+		"Id":1,
+		"RepatriateId":0,
+		"ApplicationStatus":"UnderConsideration",
+		"ServiceType":"RelocationProgram",
+		"Documents": [1]
+	},
+]

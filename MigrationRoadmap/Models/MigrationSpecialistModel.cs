@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace MigrationRoadmap.Models
 {
-	internal class MigrationSpecialistModel : UserModel
+	public class MigrationSpecialistModel : UserModel
 	{
-		public List<ApplicationModel> Applications;
-	}
+		private List<ApplicationModel> Applications;
+
+        public MigrationSpecialistModel(UserModel user) : base(user.Id, user.Email, user.Password, user.FullName, user.Role, user.Passport) { }
+    }
 }

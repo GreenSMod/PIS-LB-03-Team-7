@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\repatriatemainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\repatriatemainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\repatriatemainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\repatriatemainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -23,12 +11,8 @@
       "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\repatriatemainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\repatriatemainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\repatriatemainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,90 +35,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAZAAAA",
+              "Title": "RepatriateMainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\RepatriateMainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.Designer.cs*",
+              "RelativeToolTip": "Forms\\RepatriateMainForm.Designer.cs*",
+              "ViewState": "AQIAAF4AAAAAAAAAAADwvzEAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T13:08:48.387Z",
+              "WhenOpened": "2024-12-29T15:02:52.372Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RepatriateMainForm.cs",
-              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.cs",
-              "RelativeDocumentMoniker": "Forms\\RepatriateMainForm.cs",
-              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.cs",
-              "RelativeToolTip": "Forms\\RepatriateMainForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T13:07:14.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RepatriateMainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.cs",
-              "RelativeDocumentMoniker": "Forms\\RepatriateMainForm.cs",
-              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Forms\\RepatriateMainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T13:07:24.906Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RepatriateMainForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\RepatriateMainForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.Designer.cs",
-              "RelativeToolTip": "Forms\\RepatriateMainForm.Designer.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwBwAAAAPAAAA",
+              "Title": "RepatriateMainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.cs",
+              "RelativeDocumentMoniker": "Forms\\RepatriateMainForm.cs",
+              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "RelativeToolTip": "Forms\\RepatriateMainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T13:07:43.348Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\LoginForm.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\LoginForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\LoginForm.Designer.cs",
-              "RelativeToolTip": "Forms\\LoginForm.Designer.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAQwGwAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T13:07:53.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Forms\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T13:07:03.679Z",
+              "WhenOpened": "2024-12-29T14:58:35.147Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\LoginForm.cs",
-              "RelativeToolTip": "Forms\\LoginForm.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAWAAAA",
+              "DocumentIndex": 1,
+              "Title": "RepatriateMainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.cs",
+              "RelativeDocumentMoniker": "Forms\\RepatriateMainForm.cs",
+              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\RepatriateMainForm.cs*",
+              "RelativeToolTip": "Forms\\RepatriateMainForm.cs*",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAuwBsAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T13:07:08.098Z",
+              "WhenOpened": "2024-12-29T15:02:48.669Z",
               "EditorCaption": ""
             }
           ]

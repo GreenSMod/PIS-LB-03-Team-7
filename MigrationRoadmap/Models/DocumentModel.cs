@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,10 +8,20 @@ using System.Xml.Linq;
 
 namespace MigrationRoadmap.Models
 {
-	internal class DocumentModel
+	public class DocumentModel
 	{
-		public int Id;
-		public DocumentType DocumentType;
-		public string Link;
-	}
+		public readonly int Id;
+        public readonly int RepatriateId;
+        public readonly DocumentType DocumentType;
+		public readonly string Link;
+
+        [JsonConstructor]
+        public DocumentModel(int id, int repatriateId, DocumentType documentType, string link)
+		{
+            Id = id;
+            RepatriateId = repatriateId;
+            DocumentType = documentType;
+			Link = link;
+        }
+    }
 }

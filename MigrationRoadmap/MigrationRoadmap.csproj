@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Json\Users.json" />
+    <None Include="Data\Users.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings" />
   </ItemGroup>

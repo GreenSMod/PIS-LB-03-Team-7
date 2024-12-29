@@ -16,7 +16,7 @@ namespace MigrationRoadmap.ViewModels
 
 		public LoginViewModel()
 		{
-            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Json\Users.json");
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Data\Users.json");
             string filePath = Path.GetFullPath(path);
 
 			var json = File.ReadAllText(filePath);

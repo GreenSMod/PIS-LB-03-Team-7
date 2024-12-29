@@ -77,7 +77,6 @@ namespace MigrationRoadmap
             this.Controls.Add(this.emailField);
             this.Controls.Add(this.passField);
             this.Controls.Add(this.buttonLogin);
-            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "LoginForm";
