@@ -34,7 +34,7 @@ namespace MigrationRoadmap.Forms
 			this.serviceTypeLabel = new System.Windows.Forms.Label();
 			this.statusLabel = new System.Windows.Forms.Label();
 			this.docsPanel = new System.Windows.Forms.Panel();
-			this.Docslabel = new System.Windows.Forms.Label();
+			this.DocsLabel = new System.Windows.Forms.Label();
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
@@ -114,7 +114,7 @@ namespace MigrationRoadmap.Forms
 			this.ClientSize = new System.Drawing.Size(984, 761);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
-			this.Controls.Add(this.Docslabel);
+			this.Controls.Add(this.DocsLabel);
 			this.Controls.Add(this.docsPanel);
 			this.Controls.Add(this.statusLabel);
 			this.Controls.Add(this.serviceTypeLabel);
@@ -141,7 +141,7 @@ namespace MigrationRoadmap.Forms
 		private Label serviceTypeLabel;
 		private Label statusLabel;
 		private Panel docsPanel;
-		private Label Docslabel;
+		private Label DocsLabel;
 		private Button button1;
 		private Button button2;
 	}

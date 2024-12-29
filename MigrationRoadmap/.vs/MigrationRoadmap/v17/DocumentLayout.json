@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\forms\\applicationinfoform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\applicationinfoform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\applicationinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\applicationinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\applicationinfoform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\applicationinfoform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\applicationinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\forms\\applicationinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\applicationinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,13 +34,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ApplicationInfoForm.cs",
               "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\ApplicationInfoForm.cs",
               "RelativeDocumentMoniker": "Forms\\ApplicationInfoForm.cs",
-              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\ApplicationInfoForm.cs*",
-              "RelativeToolTip": "Forms\\ApplicationInfoForm.cs*",
-              "ViewState": "AQIAADgAAAAAAAAAAAAIwEUAAAAUAAAA",
+              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\ApplicationInfoForm.cs",
+              "RelativeToolTip": "Forms\\ApplicationInfoForm.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAwwDkAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-29T21:04:39.324Z",
               "EditorCaption": ""
@@ -51,21 +51,20 @@
               "Title": "ApplicationInfoForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\ApplicationInfoForm.cs",
               "RelativeDocumentMoniker": "Forms\\ApplicationInfoForm.cs",
-              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\ApplicationInfoForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
-              "RelativeToolTip": "Forms\\ApplicationInfoForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\ApplicationInfoForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Forms\\ApplicationInfoForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T21:04:37.236Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2024-12-29T21:04:37.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ApplicationInfoForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\ApplicationInfoForm.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\ApplicationInfoForm.Designer.cs",
               "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\ApplicationInfoForm.Designer.cs",
               "RelativeToolTip": "Forms\\ApplicationInfoForm.Designer.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAowGsAAAAAAAAA",
+              "ViewState": "AQIAAIMAAAAAAAAAAAD4v48AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-29T21:03:19.991Z",
               "EditorCaption": ""

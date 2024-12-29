@@ -28,3 +28,4 @@ C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\Mig
 C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\Migratio.DF03C9D7.Up2Date
 C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.Forms.ApplicationInfoForm.resources
 C:\Users\IVAN\Source\Repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.Forms.ApplicationInfoForm.resources
+C:\Users\Grinya\source\repos\PIS-LB-03-Team-7\MigrationRoadmap\obj\x86\Debug\MigrationRoadmap.Forms.MigrationSpecialistConsiderForm.resources
