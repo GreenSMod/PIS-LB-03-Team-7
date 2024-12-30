@@ -14,7 +14,7 @@ namespace MigrationRoadmap.Models
 		public int Id;
 		public string ServiceName;
 		public string Description;
-		public RegulationModel Regulation;
+		public int RegulationId;
 
 		[JsonConstructor]
 		public ServiceModel(int id, string serviceName, string description, int regulationId)
@@ -23,11 +23,12 @@ namespace MigrationRoadmap.Models
 			ServiceName = serviceName;
 			Description = description;
 
-			string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Data\Regulations.json");
-			string filePath = Path.GetFullPath(path);
-			var json = File.ReadAllText(filePath);
-			var data = JsonConvert.DeserializeObject<List<RegulationModel>>(json);
-			Regulation = data.FirstOrDefault(r => r.Id == regulationId);
-		}
+			//string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Data\Regulations.json");
+			//string filePath = Path.GetFullPath(path);
+			//var json = File.ReadAllText(filePath);
+			//var data = JsonConvert.DeserializeObject<List<RegulationModel>>(json);
+			//Regulation = data.FirstOrDefault(r => r.Id == regulationId);
+            RegulationId = regulationId;
+        }
 	}
 }

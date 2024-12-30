@@ -11,8 +11,9 @@ namespace MigrationRoadmap.ViewModels
 {
 	public class AdministratorViewModel
 	{
-		private List<ServiceModel> services;
-		public AdministratorModel Administrator { get; private set; }
+		public List<ServiceModel> Services { get; }
+        public List<RegulationModel> Regulations { get; }
+        public AdministratorModel Administrator { get; private set; }
 
 		public AdministratorViewModel(UserModel user)
 		{
@@ -20,17 +21,21 @@ namespace MigrationRoadmap.ViewModels
 
 			string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Data\Services.json");
 			string filePath = Path.GetFullPath(path);
-
 			var json = File.ReadAllText(filePath);
 			var data = JsonConvert.DeserializeObject<List<ServiceModel>>(json);
+            Services = data;
 
-			services = data;
+            string path2 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Data\Regulations.json");
+            string filePath2 = Path.GetFullPath(path2);
+            var json2 = File.ReadAllText(filePath2);
+            var data2 = JsonConvert.DeserializeObject<List<RegulationModel>>(json2);
+			Regulations = data2;
 		}
 
-		public List<ServiceModel> GetServices()
-		{
-			return services;
-		}
+		//public List<ServiceModel> GetServices()
+		//{
+		//	return Services;
+		//}
 
 		public void ChangeService(string newName, string newDescription)
 		{

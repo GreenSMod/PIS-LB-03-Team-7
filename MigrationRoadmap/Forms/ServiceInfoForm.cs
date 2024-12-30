@@ -23,8 +23,8 @@ namespace MigrationRoadmap.Forms
 			administratorViewModel = viewModel;
 			serviceNameLabel.Text = service.ServiceName;
 			descriptionLabel.Text = service.Description;
-			deadlineLabel.Text = service.Regulation.Deadline;
-		}
+			deadlineLabel.Text = administratorViewModel.Regulations.FirstOrDefault(r => r.Id == service.RegulationId).Deadline;
+        }
 
 		private void buttonReturn_Click(object sender, EventArgs e)
 		{
@@ -40,13 +40,16 @@ namespace MigrationRoadmap.Forms
 			buttonChangeService.Visible = !buttonChangeService.Visible;
 			serviceNameField.Visible = !serviceNameField.Visible;
 			descriptionField.Visible = !descriptionField.Visible;
-		}
+            buttonSaveServiceChange.Visible = !buttonSaveServiceChange.Visible;
+
+        }
 
 		private void buttonChangeRegulation_Click(object sender, EventArgs e)
 		{
 			buttonChangeRegulation.Visible = !buttonChangeRegulation.Visible;
 			deadlineField.Visible = !deadlineField.Visible;
-		}
+            buttonSaveRegulationChange.Visible = !buttonSaveRegulationChange.Visible;
+        }
 
 		private void buttonSaveServiceChange_Click(object sender, EventArgs e)
 		{
