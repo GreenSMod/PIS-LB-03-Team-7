@@ -37,10 +37,13 @@ namespace MigrationRoadmap.Models
             var data = JsonConvert.DeserializeObject<List<DocumentModel>>(json);
             //Documents = data.FindAll(doc => doc.RepatriateId == null);
             Documents = new List<DocumentModel>();
-            foreach (var docId in documents)
-            {
-                Documents.Add(data.FirstOrDefault(doc => doc.Id == docId));
-            }
+           //if (documents != null)
+           // {
+				foreach (var docId in documents)
+				{
+					Documents.Add(data.FirstOrDefault(doc => doc.Id == docId));
+				}
+			//}  
 
             MigrationSpecialistId = migrationSpecialistId;
             RejectReason = rejectReason;
