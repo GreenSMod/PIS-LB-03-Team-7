@@ -43,10 +43,10 @@ namespace MigrationRoadmap.Forms
 			// 
 			// buttonReturn
 			// 
-			this.buttonReturn.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.buttonReturn.Font = new System.Drawing.Font("Liberation Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.buttonReturn.Location = new System.Drawing.Point(30, 30);
 			this.buttonReturn.Name = "buttonReturn";
-			this.buttonReturn.Size = new System.Drawing.Size(150, 40);
+			this.buttonReturn.Size = new System.Drawing.Size(200, 50);
 			this.buttonReturn.TabIndex = 3;
 			this.buttonReturn.Text = "Назад";
 			this.buttonReturn.UseVisualStyleBackColor = true;
@@ -55,19 +55,19 @@ namespace MigrationRoadmap.Forms
 			// serviceTypeLabel
 			// 
 			this.serviceTypeLabel.AutoSize = true;
-			this.serviceTypeLabel.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.serviceTypeLabel.Location = new System.Drawing.Point(26, 178);
-			this.serviceTypeLabel.MaximumSize = new System.Drawing.Size(400, 0);
+			this.serviceTypeLabel.Font = new System.Drawing.Font("Liberation Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.serviceTypeLabel.Location = new System.Drawing.Point(26, 200);
+			//this.serviceTypeLabel.MaximumSize = new System.Drawing.Size(400, 0);
 			this.serviceTypeLabel.Name = "serviceTypeLabel";
-			this.serviceTypeLabel.Size = new System.Drawing.Size(141, 21);
+			this.serviceTypeLabel.Size = new System.Drawing.Size(182, 26);
 			this.serviceTypeLabel.TabIndex = 4;
 			this.serviceTypeLabel.Text = "serviceTypeLabel";
 			// 
 			// statusLabel
 			// 
 			this.statusLabel.AutoSize = true;
-			this.statusLabel.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.statusLabel.Location = new System.Drawing.Point(24, 106);
+			this.statusLabel.Font = new System.Drawing.Font("Liberation Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.statusLabel.Location = new System.Drawing.Point(25, 106);
 			this.statusLabel.Name = "statusLabel";
 			this.statusLabel.Size = new System.Drawing.Size(156, 36);
 			this.statusLabel.TabIndex = 5;
@@ -84,7 +84,7 @@ namespace MigrationRoadmap.Forms
 			// DocsLabel
 			// 
 			this.DocsLabel.AutoSize = true;
-			this.DocsLabel.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.DocsLabel.Font = new System.Drawing.Font("Liberation Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.DocsLabel.Location = new System.Drawing.Point(650, 34);
 			this.DocsLabel.Name = "DocsLabel";
 			this.DocsLabel.Size = new System.Drawing.Size(171, 36);
@@ -93,7 +93,7 @@ namespace MigrationRoadmap.Forms
 			// 
 			// buttonApprove
 			// 
-			this.buttonApprove.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.buttonApprove.Font = new System.Drawing.Font("Liberation Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.buttonApprove.Location = new System.Drawing.Point(30, 601);
 			this.buttonApprove.Name = "buttonApprove";
 			this.buttonApprove.Size = new System.Drawing.Size(150, 40);
@@ -106,7 +106,7 @@ namespace MigrationRoadmap.Forms
 			// buttonReject
 			// 
 			this.buttonReject.Enabled = false;
-			this.buttonReject.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.buttonReject.Font = new System.Drawing.Font("Liberation Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.buttonReject.Location = new System.Drawing.Point(30, 681);
 			this.buttonReject.Name = "buttonReject";
 			this.buttonReject.Size = new System.Drawing.Size(150, 40);
@@ -128,7 +128,7 @@ namespace MigrationRoadmap.Forms
 			// reasonLabel
 			// 
 			this.reasonLabel.AutoSize = true;
-			this.reasonLabel.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.reasonLabel.Font = new System.Drawing.Font("Liberation Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.reasonLabel.Location = new System.Drawing.Point(332, 562);
 			this.reasonLabel.Name = "reasonLabel";
 			this.reasonLabel.Size = new System.Drawing.Size(144, 36);

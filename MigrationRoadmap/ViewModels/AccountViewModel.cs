@@ -32,7 +32,7 @@ namespace MigrationRoadmap.ViewModels
             JArray json = (JArray)JToken.ReadFrom(new JsonTextReader(reader));
             reader.Close();
 
-            JObject repatriate = (JObject)json[Repatriate.Id];
+            JObject repatriate = (JObject)json[Repatriate.Id - 1];
 
             repatriate["Email"] = newEmail;
             Repatriate.Email = newEmail;
@@ -44,8 +44,6 @@ namespace MigrationRoadmap.ViewModels
             }
 
             File.WriteAllText(filePath, json.ToString());
-
-            
         }
     }
 }

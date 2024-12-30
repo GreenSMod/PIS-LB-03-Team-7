@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,11 @@ namespace MigrationRoadmap.Forms
 		public RepatriateMainForm(UserModel user)
 		{
 			InitializeComponent();
+			ReinitializeComponent();
 			repatriateViewModel = new RepatriateViewModel(user);
             nameLabel.Text = user.FullName;
             emailLabel.Text = user.Email;
+            this.MouseClick += mouseClick_accInfoPanel;
             CreateDynamicButtons(activeApplications, ApplicationStatus.UnderConsideration);
 			CreateDynamicButtons(archiveApplications, ApplicationStatus.Approved);
 		}
@@ -31,16 +34,6 @@ namespace MigrationRoadmap.Forms
 		{
 			repatriateViewModel.UpdateRepatriate(repatriate);
 			this.emailLabel.Text = repatriate.Email;
-		}
-
-		private void buttonApplyApplicationRelocation_Click(object sender, EventArgs e)
-		{
-			repatriateViewModel.ApplyApplication(ServiceType.RelocationProgram);
-		}
-
-		private void buttonApplyApplicationCompensation_Click(object sender, EventArgs e)
-		{
-			repatriateViewModel.ApplyApplication(ServiceType.CompensationExpenses);
 		}
 
 		private void buttonAccountInfo_Click(object sender, EventArgs e)
@@ -62,7 +55,7 @@ namespace MigrationRoadmap.Forms
 
 		private void buttonChangeAccInfo_Click(object sender, EventArgs e)
 		{
-            accInfoPanel.Visible = !accInfoPanel.Visible;
+            accInfoPanel.Visible = false;
             var accountForm = new AccountForm(repatriateViewModel.Repatriate)
             {
                 Location = this.Location
@@ -70,6 +63,18 @@ namespace MigrationRoadmap.Forms
             accountForm.Show();
             System.Threading.Thread.Sleep(1);
             this.Hide();
+        }
+
+		private void hideAccInfoPanel()
+		{
+            var cursorX = Cursor.Position.X - this.Location.X - Cursor.Size.Width;
+            var cursorY = Cursor.Position.Y - this.Location.Y - Cursor.Size.Height;
+            if (accInfoPanel.Visible
+            && ((cursorX < accInfoPanel.Location.X || cursorX > accInfoPanel.Location.X + accInfoPanel.Width)
+            || (cursorY < accInfoPanel.Location.Y || cursorY > accInfoPanel.Location.Y + accInfoPanel.Height)))
+            {
+                accInfoPanel.Visible = false;
+            }
         }
 
 		private void CreateDynamicButtons(TabPage panel, ApplicationStatus status)
@@ -106,9 +111,9 @@ namespace MigrationRoadmap.Forms
 
 					Button button = new Button
 					{
-						Text = Text = $"Заявка #{application.Id} {f}",
+						Text = $"Заявка #{application.Id} {f}",
 						Dock = DockStyle.Top,
-						Height = 40,
+						Height = 70,
 						Name = application.Id.ToString()
 					};
                     button.Click += buttonApllication_Click;
@@ -133,5 +138,48 @@ namespace MigrationRoadmap.Forms
                 this.Hide();
             }
 		}
-	}
+
+        private void buttonApplications_Click(object sender, EventArgs e)
+        {
+            this.panelApplications.Visible = !this.panelApplications.Visible;
+        }
+
+        private void hidePanelApplications()
+        {
+            var cursorX = Cursor.Position.X - this.Location.X - Cursor.Size.Width;
+            var cursorY = Cursor.Position.Y - this.Location.Y - Cursor.Size.Height;
+            if (panelApplications.Visible
+            && ((cursorX < panelApplications.Location.X || cursorX > panelApplications.Location.X + panelApplications.Width)
+            || (cursorY < panelApplications.Location.Y || cursorY > panelApplications.Location.Y + panelApplications.Height)))
+            {
+                panelApplications.Visible = false;
+            }
+        }
+
+        private void buttonApplication1_Click(object sender, EventArgs e)
+        {
+            repatriateViewModel.ApplyApplication(ServiceType.RelocationProgram);
+        }
+
+        private void buttonApplication2_Click(object sender, EventArgs e)
+        {
+            repatriateViewModel.ApplyApplication(ServiceType.CompensationExpenses);
+        }
+
+        private void mouseClick_accInfoPanel(object sender, MouseEventArgs e)
+        {
+            hideAccInfoPanel();
+            hidePanelApplications();
+        }
+
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == 0x210 && m.WParam.ToInt32() == 513)
+            {
+                hideAccInfoPanel();
+                hidePanelApplications();
+            }
+            base.WndProc(ref m);
+        }
+    }
 }
