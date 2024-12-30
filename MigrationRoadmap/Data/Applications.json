@@ -1,37 +1,44 @@
 [
-	{
-		"Id": 1,
-		"RepatriateId": 1,
-		"ApplicationStatus": "UnderConsideration",
-		"ServiceType": "RelocationProgram",
-		"Documents": [1, 2]
-	},
-	{
-		"Id": 2,
-		"RepatriateId": 1,
-		"ApplicationStatus": "UnderConsideration",
-		"ServiceType": "CompensationExpenses",
-		"Documents": []
-	},
-	{
-		"Id": 3,
-		"RepatriateId": 1,
-		"ApplicationStatus": "UnderConsideration",
-		"ServiceType": "RelocationProgram",
-		"Documents": []
-	},
-	{
-		"Id": 4,
-		"RepatriateId": 1,
-		"ApplicationStatus": "Approved",
-		"ServiceType": "CompensationExpenses",
-		"Documents": []
-	},
-	{
-		"Id": 5,
-		"RepatriateId": 1,
-		"ApplicationStatus": "Rejected",
-		"ServiceType": "RelocationProgram",
-		"Documents": []
-	},
+  {
+    "Id": 1,
+    "RepatriateId": 1,
+    "ApplicationStatus": "UnderConsideration",
+    "ServiceType": "RelocationProgram",
+    "Documents": [
+      1,
+      2
+    ]
+  },
+  {
+    "Id": 2,
+    "RepatriateId": 1,
+    "ApplicationStatus": "UnderConsideration",
+    "ServiceType": "CompensationExpenses",
+    "Documents": [],
+    "MigrationSpecialistId": 2
+  },
+  {
+    "Id": 3,
+    "RepatriateId": 1,
+    "ApplicationStatus": "UnderConsideration",
+    "ServiceType": "RelocationProgram",
+    "Documents": []
+  },
+  {
+    "Id": 4,
+    "RepatriateId": 1,
+    "ApplicationStatus": "Approved",
+    "ServiceType": "CompensationExpenses",
+    "Documents": [],
+    "MigrationSpecialistId": 2
+  },
+  {
+    "Id": 5,
+    "RepatriateId": 1,
+    "ApplicationStatus": "Rejected",
+    "ServiceType": "RelocationProgram",
+    "Documents": [],
+    "MigrationSpecialistId": 2,
+    "RejectReason": "ПРИЧИНА"
+  }
 ]

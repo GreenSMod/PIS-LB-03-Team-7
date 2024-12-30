@@ -147,10 +147,11 @@ namespace MigrationRoadmap.Forms
             // archiveApplications
             // 
             this.archiveApplications.AutoScroll = true;
+            this.activeApplications.Font = new System.Drawing.Font("Liberation Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.archiveApplications.Location = new System.Drawing.Point(4, 39);
             this.archiveApplications.Name = "archiveApplications";
             this.archiveApplications.Padding = new System.Windows.Forms.Padding(3);
-            this.archiveApplications.Size = new System.Drawing.Size(921, 528);
+            this.archiveApplications.Size = new System.Drawing.Size(942, 557);
             this.archiveApplications.TabIndex = 1;
             this.archiveApplications.Text = "Архивные заявки";
             this.archiveApplications.UseVisualStyleBackColor = true;
