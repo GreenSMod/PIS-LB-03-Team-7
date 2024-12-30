@@ -54,7 +54,7 @@ namespace MigrationRoadmap.Forms
 			if (button != null)
 			{
 				var services = administratorViewModel.GetServices();
-				var applicationInfoForm = new ServiceInfoForm(services.First(service => service.Id == int.Parse(button.Name)))
+				var applicationInfoForm = new ServiceInfoForm(services.First(service => service.Id == int.Parse(button.Name)), administratorViewModel)
 				{
 					Location = this.Location
 				};
