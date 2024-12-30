@@ -1,32 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\servicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\servicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\servicesform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\servicesform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\servicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\servicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\migrationspecialistconsiderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\migrationspecialistconsiderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\migrationspecialistconsiderform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\migrationspecialistconsiderform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|c:\\users\\grinya\\source\\repos\\pis-lb-03-team-7\\migrationroadmap\\forms\\migrationspecialistconsiderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BC44CB03-F20F-48B9-9345-C8AC2BE1791C}|MigrationRoadmap.csproj|solutionrelative:forms\\migrationspecialistconsiderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -34,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,82 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServicesForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\ServicesForm.cs",
-              "RelativeDocumentMoniker": "Forms\\ServicesForm.cs",
-              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\ServicesForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
-              "RelativeToolTip": "Forms\\ServicesForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T12:39:26.58Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ServicesForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\ServicesForm.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\ServicesForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\ServicesForm.Designer.cs",
-              "RelativeToolTip": "Forms\\ServicesForm.Designer.cs",
-              "ViewState": "AQIAAIIAAAAAAAAAAAAqwGsAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T12:39:27.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ServicesForm.cs",
-              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\ServicesForm.cs",
-              "RelativeDocumentMoniker": "Forms\\ServicesForm.cs",
-              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\ServicesForm.cs*",
-              "RelativeToolTip": "Forms\\ServicesForm.cs*",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAwBkAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T12:39:32.625Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MigrationSpecialistConsiderForm.cs",
-              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\MigrationSpecialistConsiderForm.cs",
-              "RelativeDocumentMoniker": "Forms\\MigrationSpecialistConsiderForm.cs",
-              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\MigrationSpecialistConsiderForm.cs",
-              "RelativeToolTip": "Forms\\MigrationSpecialistConsiderForm.cs",
-              "ViewState": "AQIAAGwAAAAAAAAAAAAmwHEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T12:38:59.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MigrationSpecialistConsiderForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\MigrationSpecialistConsiderForm.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\MigrationSpecialistConsiderForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\MigrationSpecialistConsiderForm.Designer.cs",
-              "RelativeToolTip": "Forms\\MigrationSpecialistConsiderForm.Designer.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAowGQAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T12:39:07.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MigrationSpecialistConsiderForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\MigrationSpecialistConsiderForm.cs",
-              "RelativeDocumentMoniker": "Forms\\MigrationSpecialistConsiderForm.cs",
-              "ToolTip": "C:\\Users\\Grinya\\source\\repos\\PIS-LB-03-Team-7\\MigrationRoadmap\\Forms\\MigrationSpecialistConsiderForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Forms\\MigrationSpecialistConsiderForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T12:38:57.03Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             }
           ]
         },
