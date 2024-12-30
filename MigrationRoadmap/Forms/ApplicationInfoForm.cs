@@ -20,15 +20,16 @@ namespace MigrationRoadmap.Forms
 		private MigrationSpecialistViewModel migrationSpecialistViewModel;
 		private ApplicationModel application;
 
-		public ApplicationInfoForm()
-		{
-			InitializeComponent();
-            //ReinitializeComponent();
-        }
+		//public ApplicationInfoForm()
+		//{
+		//	InitializeComponent();
+  //          ReinitializeComponent();
+  //      }
 
         public ApplicationInfoForm(ApplicationModel application)
         {
             InitializeComponent();
+			ReinitializeComponent();
             this.Text = "ЗАЯВКА #" + application.Id.ToString();
 			//repatriateViewModel = new RepatriateViewModel(user);
 			serviceTypeLabel.Text = application.ServiceType.ToString();
@@ -41,16 +42,30 @@ namespace MigrationRoadmap.Forms
 		{
 			migrationSpecialistViewModel = viewModel;
 			this.application = application;
-			updatePermissions();
+			if (application.ApplicationStatus == ApplicationStatus.UnderConsideration)
+				updatePermissions();
 		}
 
-		private void buttonReturn_Click(object sender, EventArgs e)
-        {
+		private void updateMainForm(int applicationId)
+		{
+            //migrationSpecialistViewModel.UpdateAccount(newEmail, newPassword);
+            var mainForm = (MigrationSpecialistConsiderForm)Program.Context.MainForm;
+            mainForm.UpdateApplications(applicationId);
+
+        }
+
+		private void returnToMainForm()
+		{
             Program.Context.MainForm.Location = this.Location;
             Program.Context.MainForm.Show();
             System.Threading.Thread.Sleep(1);
             this.Hide();
             //this.Close();
+        }
+
+        private void buttonReturn_Click(object sender, EventArgs e)
+        {
+			returnToMainForm();
         }
 
 		private void updatePermissions()
@@ -59,9 +74,10 @@ namespace MigrationRoadmap.Forms
 			buttonApprove.Visible = true;
 			buttonReject.Enabled = true;
 			buttonReject.Visible = true;
-			reasonLabel.Visible = true;
+			reasonField.Enabled = true;
 			reasonField.Visible = true;
-		}
+            reasonLabel.Visible = true;
+        }
 
 		private void translateForUser()
 		{
@@ -122,19 +138,21 @@ namespace MigrationRoadmap.Forms
 
 		private void buttonApprove_Click(object sender, EventArgs e)
 		{
-			migrationSpecialistViewModel.ApproveApplication(application.Id);
-		}
+			migrationSpecialistViewModel.UpdateApplication(application.Id, ApplicationStatus.Approved, reasonField.Text);
+			this.updateMainForm(application.Id);
+            this.returnToMainForm();
+        }
 
-		private void buttonReject_Click(object sender, EventArgs e)
+        private void buttonReject_Click(object sender, EventArgs e)
 		{
 			if (string.IsNullOrWhiteSpace(reasonField.Text))
-			{
-				MessageBox.Show("Пожалуйста, укажите причину отклонения");
-			}
+				MessageBox.Show("Укажите причину отказа");
 			else
 			{
-				migrationSpecialistViewModel.RejectApplication(application.Id, reasonField.Text);
-			}
+                migrationSpecialistViewModel.UpdateApplication(application.Id, ApplicationStatus.Rejected, reasonField.Text);
+                this.updateMainForm(application.Id);
+                this.returnToMainForm();
+            }
 		}
 	}
 }

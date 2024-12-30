@@ -26,9 +26,9 @@ namespace MigrationRoadmap.Forms
             nameLabel.Text = user.FullName;
             emailLabel.Text = user.Email;
             this.MouseClick += mouseClick_accInfoPanel;
-            CreateDynamicButtons(activeApplications, ApplicationStatus.UnderConsideration);
-			CreateDynamicButtons(archiveApplications, ApplicationStatus.Approved);
-		}
+            CreateDynamicButtons(activeApplications, true);
+            CreateDynamicButtons(archiveApplications, false);
+        }
 
 		public void UpdateRepatriate(RepatriateModel repatriate)
 		{
@@ -77,54 +77,48 @@ namespace MigrationRoadmap.Forms
             }
         }
 
-		private void CreateDynamicButtons(TabPage panel, ApplicationStatus status)
-		{
-			var applications = repatriateViewModel.Repatriate.Applications;
+        private void CreateDynamicButtons(TabPage panel, bool statusIsUnderConsideration)
+        {
+            var applications = repatriateViewModel.Repatriate.Applications;
 
-			if (applications != null)
-			{
-				switch(status)
-				{
-					case ApplicationStatus.UnderConsideration:
-						applications = applications
-							.Where(app => app.ApplicationStatus == ApplicationStatus.UnderConsideration).ToList();
-						break;
-					case ApplicationStatus.Approved:
-						applications = applications
-							.Where(app => app.ApplicationStatus == ApplicationStatus.Approved && app.ApplicationStatus == ApplicationStatus.Rejected).ToList();
-						break;
-				}
-				
+            if (applications != null)
+            {
+                if (statusIsUnderConsideration)
+                    applications = applications
+                            .Where(app => app.ApplicationStatus == ApplicationStatus.UnderConsideration).ToList();
+                else
+                    applications = applications
+                            .Where(app => app.ApplicationStatus == ApplicationStatus.Approved || app.ApplicationStatus == ApplicationStatus.Rejected).ToList();
 
-				foreach (var application in applications)
-				{
-					string f = "";
-					switch (application.ServiceType)
-					{
+                foreach (var application in applications)
+                {
+                    string text = "";
+                    switch (application.ServiceType)
+                    {
                         case ServiceType.RelocationProgram:
-							f = "на запись для постановки на учёт в качестве участника Государственной программы переселения соотечественников";
-							break;
+                            text = "на запись для постановки на учёт в качестве участника Государственной программы переселения соотечественников";
+                            break;
                         case ServiceType.CompensationExpenses:
-                            f = "на компенсацию расходов по найму жилья";
+                            text = "на компенсацию расходов по найму жилья";
                             break;
                     }
 
-					Button button = new Button
-					{
-						Text = $"Заявка #{application.Id} {f}",
-						Dock = DockStyle.Top,
-						Height = 70,
-						Name = application.Id.ToString()
-					};
+                    Button button = new Button
+                    {
+                        Text = $"Заявка #{application.Id} {text}",
+                        Dock = DockStyle.Top,
+                        Height = 70,
+                        Name = application.Id.ToString()
+                    };
                     button.Click += buttonApllication_Click;
 
-					this.Controls.Add(button);
-					panel.Controls.Add(button);
-				}
-			}
-		}
+                    this.Controls.Add(button);
+                    panel.Controls.Add(button);
+                }
+            }
+        }
 
-		private void buttonApllication_Click(object sender, EventArgs e)
+        private void buttonApllication_Click(object sender, EventArgs e)
 		{
 			var button = (Button)sender;
 			if (button != null)

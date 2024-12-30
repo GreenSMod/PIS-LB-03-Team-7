@@ -23,7 +23,7 @@ namespace MigrationRoadmap.ViewModels
 
 		public void ApplyApplication(ServiceType serviceType)
 		{
-			var application = new ApplicationModel(1, 1, ApplicationStatus.UnderConsideration, ServiceType.RelocationProgram, null);
+			var application = new ApplicationModel(1, 1, ApplicationStatus.UnderConsideration, ServiceType.RelocationProgram, null, 2, "");
 			//{
 			//	// Id
 			//	ApplicationStatus = ApplicationStatus.UnderConsideration,

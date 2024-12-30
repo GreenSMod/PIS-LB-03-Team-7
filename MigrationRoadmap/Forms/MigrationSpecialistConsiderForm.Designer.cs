@@ -44,106 +44,127 @@
 			// 
 			this.tabControl1.Controls.Add(this.activeApplications);
 			this.tabControl1.Controls.Add(this.archiveApplications);
-			this.tabControl1.Location = new System.Drawing.Point(379, 32);
 			this.tabControl1.Multiline = true;
 			this.tabControl1.Name = "tabControl1";
 			this.tabControl1.SelectedIndex = 0;
-			this.tabControl1.Size = new System.Drawing.Size(545, 685);
 			this.tabControl1.TabIndex = 5;
-			// 
-			// activeApplications
-			// 
-			this.activeApplications.AutoScroll = true;
-			this.activeApplications.Location = new System.Drawing.Point(4, 22);
+            this.tabControl1.Font = new System.Drawing.Font("Liberation Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tabControl1.Location = new System.Drawing.Point(15, 130);
+            this.tabControl1.Size = new System.Drawing.Size(950, 600);
+            // 
+            // activeApplications
+            // 
+            this.activeApplications.AutoScroll = true;
 			this.activeApplications.Name = "activeApplications";
 			this.activeApplications.Padding = new System.Windows.Forms.Padding(3);
-			this.activeApplications.Size = new System.Drawing.Size(537, 659);
 			this.activeApplications.TabIndex = 0;
 			this.activeApplications.Text = "Активные заявки";
 			this.activeApplications.UseVisualStyleBackColor = true;
-			// 
-			// archiveApplications
-			// 
-			this.archiveApplications.AutoScroll = true;
-			this.archiveApplications.Location = new System.Drawing.Point(4, 22);
+            this.activeApplications.Font = new System.Drawing.Font("Liberation Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.activeApplications.Location = new System.Drawing.Point(4, 39);
+            this.activeApplications.Size = new System.Drawing.Size(942, 557);
+            // 
+            // archiveApplications
+            // 
+            this.archiveApplications.AutoScroll = true;
 			this.archiveApplications.Name = "archiveApplications";
 			this.archiveApplications.Padding = new System.Windows.Forms.Padding(3);
-			this.archiveApplications.Size = new System.Drawing.Size(537, 467);
 			this.archiveApplications.TabIndex = 1;
 			this.archiveApplications.Text = "Архивные заявки";
 			this.archiveApplications.UseVisualStyleBackColor = true;
-			// 
-			// buttonAccountInfo
-			// 
-			this.buttonAccountInfo.Location = new System.Drawing.Point(12, 12);
+            this.archiveApplications.Font = new System.Drawing.Font("Liberation Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.archiveApplications.Location = new System.Drawing.Point(4, 39);
+            this.archiveApplications.Size = new System.Drawing.Size(942, 557);
+            // 
+            // buttonAccountInfo
+            // 
 			this.buttonAccountInfo.Name = "buttonAccountInfo";
-			this.buttonAccountInfo.Size = new System.Drawing.Size(70, 35);
 			this.buttonAccountInfo.TabIndex = 7;
 			this.buttonAccountInfo.Text = "Профиль";
 			this.buttonAccountInfo.UseVisualStyleBackColor = true;
 			this.buttonAccountInfo.Click += new System.EventHandler(this.buttonAccountInfo_Click);
-			// 
-			// accInfoPanel
-			// 
-			this.accInfoPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonAccountInfo.Font = new System.Drawing.Font("Liberation Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAccountInfo.Location = new System.Drawing.Point(15, 15);
+            this.buttonAccountInfo.Size = new System.Drawing.Size(100, 35);
+            // 
+            // accInfoPanel
+            // 
+            this.accInfoPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.accInfoPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.accInfoPanel.Controls.Add(this.nameLabel);
 			this.accInfoPanel.Controls.Add(this.buttonLogout);
 			this.accInfoPanel.Controls.Add(this.emailLabel);
-			this.accInfoPanel.Location = new System.Drawing.Point(12, 52);
+			this.accInfoPanel.Location = new System.Drawing.Point(15, 55);
 			this.accInfoPanel.Name = "accInfoPanel";
 			this.accInfoPanel.Size = new System.Drawing.Size(188, 185);
 			this.accInfoPanel.TabIndex = 6;
 			this.accInfoPanel.Visible = false;
-			// 
-			// nameLabel
-			// 
-			this.nameLabel.AutoSize = true;
-			this.nameLabel.Location = new System.Drawing.Point(16, 10);
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoEllipsis = true;
+            this.nameLabel.Location = new System.Drawing.Point(16, 10);
 			this.nameLabel.Name = "nameLabel";
-			this.nameLabel.Size = new System.Drawing.Size(57, 13);
 			this.nameLabel.TabIndex = 4;
 			this.nameLabel.Text = "UserName";
-			// 
-			// buttonLogout
-			// 
-			this.buttonLogout.Location = new System.Drawing.Point(19, 124);
+            this.nameLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.nameLabel.Font = new System.Drawing.Font("Liberation Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameLabel.Size = new System.Drawing.Size(150, 35);
+            // 
+            // buttonLogout
+            // 
+            this.buttonLogout.Location = new System.Drawing.Point(19, 142);
 			this.buttonLogout.Name = "buttonLogout";
 			this.buttonLogout.Size = new System.Drawing.Size(92, 29);
 			this.buttonLogout.TabIndex = 3;
 			this.buttonLogout.Text = "Выйти";
 			this.buttonLogout.UseVisualStyleBackColor = true;
 			this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
-			// 
-			// emailLabel
-			// 
-			this.emailLabel.AutoSize = true;
-			this.emailLabel.Location = new System.Drawing.Point(16, 45);
+            this.buttonLogout.Font = new System.Drawing.Font("Liberation Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonLogout.Name = "buttonLogout";
+            this.buttonLogout.Size = new System.Drawing.Size(92, 29);
+            // 
+            // emailLabel
+            // 
+            this.emailLabel.AutoEllipsis = true;
+            this.emailLabel.Location = new System.Drawing.Point(16, 45);
 			this.emailLabel.Name = "emailLabel";
-			this.emailLabel.Size = new System.Drawing.Size(54, 13);
+			this.emailLabel.Size = new System.Drawing.Size(150, 15);
 			this.emailLabel.TabIndex = 1;
 			this.emailLabel.Text = "UserEmail";
-			// 
-			// MigrationSpecialistConsiderForm
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.emailLabel.Font = new System.Drawing.Font("Liberation Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.emailLabel.ForeColor = System.Drawing.SystemColors.GrayText;
+            // 
+            // MigrationSpecialistConsiderForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(984, 761);
 			this.Controls.Add(this.buttonAccountInfo);
 			this.Controls.Add(this.accInfoPanel);
 			this.Controls.Add(this.tabControl1);
 			this.Name = "MigrationSpecialistConsiderForm";
-			this.Text = "MigrationSpecialistConsiderForm";
+			this.Text = "ГЛАВНАЯ";
 			this.tabControl1.ResumeLayout(false);
 			this.accInfoPanel.ResumeLayout(false);
 			this.accInfoPanel.PerformLayout();
 			this.ResumeLayout(false);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
 
-		}
+        }
 
-		#endregion
+        #endregion
 
-		private System.Windows.Forms.TabControl tabControl1;
+        private void ReinitializeComponent()
+        {
+            this.accInfoPanel.BringToFront();
+
+        }
+
+        private System.Windows.Forms.TabControl tabControl1;
 		private System.Windows.Forms.TabPage activeApplications;
 		private System.Windows.Forms.TabPage archiveApplications;
 		private System.Windows.Forms.Button buttonAccountInfo;

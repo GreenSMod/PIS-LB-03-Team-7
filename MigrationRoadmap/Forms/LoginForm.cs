@@ -26,7 +26,7 @@ namespace MigrationRoadmap
 
 		private void buttonLogin_Click(object sender, EventArgs e)
 		{
-			string email = emailField.Text;
+            string email = emailField.Text;
 			string password = passField.Text;
 
             var user = loginViewModel.Authenticate(email, password);

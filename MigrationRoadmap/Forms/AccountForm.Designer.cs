@@ -123,7 +123,7 @@ namespace MigrationRoadmap.Forms
 
         private void ReinitializeComponent()
         {
-            //this.FormClosing += AccountForm_FormClosing;
+            this.FormClosing += AccountForm_FormClosing;
             Program.SendMessage(this.emailField.Handle, 0x1501, 0, "Email");
             Program.SendMessage(this.passField.Handle, 0x1501, 0, "Пароль");
             this.buttonReturn.Select();
