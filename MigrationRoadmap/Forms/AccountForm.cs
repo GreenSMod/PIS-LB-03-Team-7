@@ -26,7 +26,7 @@ namespace MigrationRoadmap.Forms
             accountViewModel = new AccountViewModel(repatriate);
             this.emailField.Text = repatriate.Email;
 			this.nameLabel.Text = repatriate.FullName;
-			this.passportLabel.Text = repatriate.Passport;
+			this.passportLabel.Text = "Паспортные данные:\n" + repatriate.Passport;
 
         }
 
