@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MigrationRoadmap.Models
 {
-	internal class AdministratorModel : UserModel
+	public class AdministratorModel : UserModel
 	{
 		private List<ServiceModel> Services;
 

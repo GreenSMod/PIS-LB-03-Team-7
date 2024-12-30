@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MigrationRoadmap.ViewModels
 {
-	internal class AdministratorViewModel
+	public class AdministratorViewModel
 	{
 		private List<ServiceModel> services;
 		public AdministratorModel Administrator { get; private set; }

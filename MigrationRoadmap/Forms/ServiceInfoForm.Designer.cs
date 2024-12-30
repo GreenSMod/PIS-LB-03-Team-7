@@ -30,7 +30,9 @@
 		{
 			this.buttonReturn = new System.Windows.Forms.Button();
 			this.serviceTypeLabel = new System.Windows.Forms.Label();
-			this.abel = new System.Windows.Forms.Label();
+			this.descriptionLabel = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// buttonReturn
@@ -55,23 +57,44 @@
 			this.serviceTypeLabel.TabIndex = 5;
 			this.serviceTypeLabel.Text = "serviceTypeLabel";
 			// 
-			// abel
+			// descriptionLabel
 			// 
-			this.abel.AutoSize = true;
-			this.abel.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.abel.Location = new System.Drawing.Point(26, 194);
-			this.abel.MaximumSize = new System.Drawing.Size(400, 0);
-			this.abel.Name = "abel";
-			this.abel.Size = new System.Drawing.Size(141, 21);
-			this.abel.TabIndex = 6;
-			this.abel.Text = "serviceTypeLabel";
+			this.descriptionLabel.AutoSize = true;
+			this.descriptionLabel.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.descriptionLabel.Location = new System.Drawing.Point(26, 194);
+			this.descriptionLabel.MaximumSize = new System.Drawing.Size(400, 0);
+			this.descriptionLabel.Name = "descriptionLabel";
+			this.descriptionLabel.Size = new System.Drawing.Size(134, 21);
+			this.descriptionLabel.TabIndex = 6;
+			this.descriptionLabel.Text = "descriptionLabel";
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(27, 347);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(35, 13);
+			this.label1.TabIndex = 7;
+			this.label1.Text = "label1";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label2.Location = new System.Drawing.Point(25, 298);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(70, 27);
+			this.label2.TabIndex = 8;
+			this.label2.Text = "Срок:";
 			// 
 			// ServiceInfoForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(984, 761);
-			this.Controls.Add(this.abel);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.descriptionLabel);
 			this.Controls.Add(this.serviceTypeLabel);
 			this.Controls.Add(this.buttonReturn);
 			this.Name = "ServiceInfoForm";
@@ -85,6 +108,8 @@
 
 		private System.Windows.Forms.Button buttonReturn;
 		private System.Windows.Forms.Label serviceTypeLabel;
-		private System.Windows.Forms.Label abel;
+		private System.Windows.Forms.Label descriptionLabel;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label label2;
 	}
 }
