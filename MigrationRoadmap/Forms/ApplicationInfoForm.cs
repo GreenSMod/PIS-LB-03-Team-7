@@ -129,7 +129,7 @@ namespace MigrationRoadmap.Forms
 		{
 			if (string.IsNullOrWhiteSpace(reasonField.Text))
 			{
-				MessageBox.Show("Пожалуйста, укажите причину отклонения");
+				MessageBox.Show("Укажите причину отклонения");
 			}
 			else
 			{

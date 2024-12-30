@@ -53,6 +53,8 @@
     <None Include="bin\Debug\WindowsApplication.exe.config" />
     <None Include="Data\Applications.json" />
     <None Include="Data\Documents.json" />
+    <None Include="Data\Regulations.json" />
+    <None Include="Data\Services.json" />
     <None Include="Data\Users.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings" />
@@ -157,6 +159,8 @@
     <Content Include="bin\Debug\WindowsApplication.exe" />
     <Content Include="bin\Debug\WindowsApplication.pdb" />
     <Content Include="Data\1\1.png" />
+    <Content Include="Data\1\2.jpg" />
+    <Content Include="Data\1\2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>

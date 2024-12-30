@@ -16,15 +16,14 @@ namespace MigrationRoadmap.Forms
 	public partial class ServiceInfoForm : Form
 	{
 		private AdministratorViewModel administratorViewModel;
-		private ServiceModel service;
 
 		public ServiceInfoForm(ServiceModel service, AdministratorViewModel viewModel)
 		{
 			InitializeComponent();
 			administratorViewModel = viewModel;
-			this.service = service;
-			serviceTypeLabel.Text = service.ServiceName;
+			serviceNameLabel.Text = service.ServiceName;
 			descriptionLabel.Text = service.Description;
+			deadlineLabel.Text = service.Regulation.Deadline;
 		}
 
 		private void buttonReturn_Click(object sender, EventArgs e)
@@ -36,6 +35,42 @@ namespace MigrationRoadmap.Forms
 			//this.Close();
 		}
 
+		private void buttonChangeService_Click(object sender, EventArgs e)
+		{
+			buttonChangeService.Visible = !buttonChangeService.Visible;
+			serviceNameField.Visible = !serviceNameField.Visible;
+			descriptionField.Visible = !descriptionField.Visible;
+		}
 
+		private void buttonChangeRegulation_Click(object sender, EventArgs e)
+		{
+			buttonChangeRegulation.Visible = !buttonChangeRegulation.Visible;
+			deadlineField.Visible = !deadlineField.Visible;
+		}
+
+		private void buttonSaveServiceChange_Click(object sender, EventArgs e)
+		{
+
+			if (string.IsNullOrWhiteSpace(serviceNameField.Text) || string.IsNullOrWhiteSpace(descriptionField.Text))
+			{
+				MessageBox.Show("Поля не должны быть пустыми");
+			}
+			else
+			{
+				administratorViewModel.ChangeService(serviceNameField.Text, descriptionField.Text);
+			}
+		}
+
+		private void buttonSaveRegulationChange_Click(object sender, EventArgs e)
+		{
+			if (string.IsNullOrWhiteSpace(deadlineField.Text))
+			{
+				MessageBox.Show("Поле не должно быть пустым");
+			}
+			else
+			{
+				administratorViewModel.ChangeRegulation(deadlineField.Text);
+			}
+		}
 	}
 }
