@@ -17,6 +17,9 @@ namespace MigrationRoadmap.Forms
 {
 	public partial class ApplicationInfoForm : Form
 	{
+		private MigrationSpecialistViewModel migrationSpecialistViewModel;
+		private ApplicationModel application;
+
 		public ApplicationInfoForm()
 		{
 			InitializeComponent();
@@ -27,7 +30,6 @@ namespace MigrationRoadmap.Forms
         {
             InitializeComponent();
             this.Text = "ЗАЯВКА #" + application.Id.ToString();
-			checkPermissions();
 			//repatriateViewModel = new RepatriateViewModel(user);
 			serviceTypeLabel.Text = application.ServiceType.ToString();
 			statusLabel.Text = application.ApplicationStatus.ToString();
@@ -35,7 +37,14 @@ namespace MigrationRoadmap.Forms
 			showDocuments(application);
 		}
 
-        private void buttonReturn_Click(object sender, EventArgs e)
+		public ApplicationInfoForm(ApplicationModel application, MigrationSpecialistViewModel viewModel) : this(application)
+		{
+			migrationSpecialistViewModel = viewModel;
+			this.application = application;
+			updatePermissions();
+		}
+
+		private void buttonReturn_Click(object sender, EventArgs e)
         {
             Program.Context.MainForm.Location = this.Location;
             Program.Context.MainForm.Show();
@@ -44,17 +53,14 @@ namespace MigrationRoadmap.Forms
             //this.Close();
         }
 
-		private void checkPermissions()
+		private void updatePermissions()
 		{
-			//switch (serviceTypeLabel.Text)
-			//{
-			//	case "RelocationProgram":
-			//		st = "на запись для постановки на учёт в качестве участника Государственной программы переселения соотечественников";
-			//		break;
-			//	case "CompensationExpenses":
-			//		st = "на компенсацию расходов по найму жилья";
-			//		break;
-			//}
+			buttonApprove.Enabled = true;
+			buttonApprove.Visible = true;
+			buttonReject.Enabled = true;
+			buttonReject.Visible = true;
+			reasonLabel.Visible = true;
+			reasonField.Visible = true;
 		}
 
 		private void translateForUser()
@@ -112,6 +118,23 @@ namespace MigrationRoadmap.Forms
 
 					docsPanel.Controls.Add(pictureBox);
 				}
+		}
+
+		private void buttonApprove_Click(object sender, EventArgs e)
+		{
+			migrationSpecialistViewModel.ApproveApplication(application.Id);
+		}
+
+		private void buttonReject_Click(object sender, EventArgs e)
+		{
+			if (string.IsNullOrWhiteSpace(reasonField.Text))
+			{
+				MessageBox.Show("Пожалуйста, укажите причину отклонения");
+			}
+			else
+			{
+				migrationSpecialistViewModel.RejectApplication(application.Id, reasonField.Text);
+			}
 		}
 	}
 }

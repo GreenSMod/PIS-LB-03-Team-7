@@ -89,6 +89,12 @@
     <Compile Include="Forms\RepatriateMainForm.Designer.cs">
       <DependentUpon>RepatriateMainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ServiceInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ServiceInfoForm.Designer.cs">
+      <DependentUpon>ServiceInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ServicesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RepatriateMainForm.resx">
       <DependentUpon>RepatriateMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ServiceInfoForm.resx">
+      <DependentUpon>ServiceInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ServicesForm.resx">
+      <DependentUpon>ServicesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

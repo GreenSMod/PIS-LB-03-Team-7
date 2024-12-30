@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace MigrationRoadmap.ViewModels
 {
-	internal class MigrationSpecialistViewModel
+	public class MigrationSpecialistViewModel
 	{
 		private List<ApplicationModel> applications;
+		public MigrationSpecialistModel MigrationSpecialist { get; private set; }
 
-		public MigrationSpecialistViewModel()
+		public MigrationSpecialistViewModel(UserModel user)
 		{
-
+			MigrationSpecialist = new MigrationSpecialistModel(user) { };
 		}
 
 		public List<ApplicationModel> FilterApplications(ServiceType serviceType)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MigrationRoadmap.Models
 {
-	internal class ServiceModel
+	public class ServiceModel
 	{
 		public int Id;
 		public string ServiceName;
