@@ -42,7 +42,7 @@ namespace MigrationRoadmap.Forms
 						Height = 40,
 						Name = service.Id.ToString()
 					};
-					button.Click += buttonApllication_Click;
+					button.Click += buttonService_Click;
 
 					this.Controls.Add(button);
 					servicesPanel.Controls.Add(button);
@@ -50,7 +50,7 @@ namespace MigrationRoadmap.Forms
 			}
 		}
 
-		private void buttonApllication_Click(object sender, EventArgs e)
+		private void buttonService_Click(object sender, EventArgs e)
 		{
 			var button = (Button)sender;
 			if (button != null)

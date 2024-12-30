@@ -39,10 +39,10 @@ namespace MigrationRoadmap.Models
             Documents = new List<DocumentModel>();
            //if (documents != null)
            // {
-				foreach (var docId in documents)
-				{
-					Documents.Add(data.FirstOrDefault(doc => doc.Id == docId));
-				}
+			foreach (var docId in documents)
+			{
+				Documents.Add(data.FirstOrDefault(doc => doc.Id == docId));
+			}
 			//}  
 
             MigrationSpecialistId = migrationSpecialistId;

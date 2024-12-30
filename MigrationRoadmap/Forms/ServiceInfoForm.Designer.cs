@@ -187,7 +187,8 @@
 			this.Controls.Add(this.serviceNameLabel);
 			this.Controls.Add(this.buttonReturn);
 			this.Name = "ServiceInfoForm";
-			this.Text = "ServiceInfoForm";
+			this.ShowIcon = false;
+			this.Text = "УСЛУГА";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

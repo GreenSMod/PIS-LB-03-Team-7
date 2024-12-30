@@ -1,12 +1,16 @@
 ﻿using MigrationRoadmap.Models;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms.VisualStyles;
+using System.Xml.Linq;
 
 namespace MigrationRoadmap.ViewModels
 {
@@ -24,32 +28,60 @@ namespace MigrationRoadmap.ViewModels
 			Repatriate = repatriate;
 		}
 
-		public void ApplyApplication(ServiceType serviceType)
+		public List<int> SaveDocumentsInfo(string[] filePaths)
+		{
+			string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Data\Documents.json");
+			string filePath = Path.GetFullPath(path);
+
+			StreamReader reader = File.OpenText(filePath);
+			JArray json = (JArray)JToken.ReadFrom(new JsonTextReader(reader));
+			reader.Close();
+			var listId = new List<int>();
+			foreach (var file in filePaths)
+			{
+				var lastId = (int)json.Last["Id"];
+
+				var fileName = Path.GetFileName(file);
+				JObject newDocument = new JObject
+				{
+					["Id"] = lastId + 1,
+					["RepatriateId"] = Repatriate.Id,
+					["DocumentType"] = DocumentType.Passport.ToString(),
+					["Link"] = $"\\{Repatriate.Id}\\{fileName}"
+				};
+				json.Add(newDocument);
+				listId.Add(lastId + 1);
+			}
+				
+			File.WriteAllText(filePath, json.ToString());
+
+			return listId;
+		}
+
+		public void ApplyApplication(ServiceType serviceType, List<int> documents)
 		{
 			string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Data\Applications.json");
-			string applicationsFilePath = Path.GetFullPath(path);
-			var applicationsJson = File.ReadAllText(applicationsFilePath);
-			var applications = JsonConvert.DeserializeObject<List<ApplicationModel>>(applicationsJson);
-			var lastId = applications.Last().Id;
-			
-			var newApplication = new ApplicationModel(lastId + 1, Repatriate.Id, ApplicationStatus.UnderConsideration, serviceType, null, 0, "");
+			string filePath = Path.GetFullPath(path);
 
-			// сохранение заявки в Applications.json
-			applications.Add(newApplication);
-			var updatedApplicationsJson = JsonConvert.SerializeObject(applications);
-			File.WriteAllText(applicationsFilePath, updatedApplicationsJson);
+			StreamReader reader = File.OpenText(filePath);
+			JArray json = (JArray)JToken.ReadFrom(new JsonTextReader(reader));
+			reader.Close();
 
-			// получение списка пользователей
-			string usersPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Data\Users.json");
-			string usersFilePath = Path.GetFullPath(usersPath);
-			var usersJson = File.ReadAllText(usersFilePath);
-			var users = JsonConvert.DeserializeObject<List<UserModel>>(usersJson);
+			var lastId = (int)json.Last["Id"];
+			JObject newApplication = new JObject
+			{
+				["Id"] = lastId + 1,
+				["repatriateId"] = Repatriate.Id,
+				["applicationStatus"] = ApplicationStatus.UnderConsideration.ToString(),
+				["serviceType"] = serviceType.ToString(),
+				["documents"] = new JArray(documents),
+				["migrationSpecialistId"] = 0,
+				["rejectReason"] = string.Empty
+			};
 
-			// к репатрианту по Id добавляется заявка в Users.json
-			var userToUpdate = users.FirstOrDefault(user => user.Id == Repatriate.Id) as RepatriateModel;
-			userToUpdate.Applications.Add(newApplication);
-			var updatedUsersJson = JsonConvert.SerializeObject(users);
-			File.WriteAllText(usersFilePath, updatedUsersJson);
+			json.Add(newApplication);
+			File.WriteAllText(filePath, json.ToString());
+			Repatriate.Applications.Add(new ApplicationModel(lastId + 1, Repatriate.Id, ApplicationStatus.UnderConsideration, serviceType, documents, 0, ""));
 		}
 	}
 }

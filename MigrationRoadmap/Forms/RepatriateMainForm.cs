@@ -1,16 +1,21 @@
 ﻿using MigrationRoadmap.Models;
 using MigrationRoadmap.ViewModels;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
+using Image = System.Drawing.Image;
 
 namespace MigrationRoadmap.Forms
 {
@@ -23,7 +28,8 @@ namespace MigrationRoadmap.Forms
 			InitializeComponent();
 			ReinitializeComponent();
 			repatriateViewModel = new RepatriateViewModel(user);
-            nameLabel.Text = user.FullName;
+
+			nameLabel.Text = user.FullName;
             emailLabel.Text = user.Email;
             this.MouseClick += mouseClick_accInfoPanel;
             CreateDynamicButtons(activeApplications, true);
@@ -150,21 +156,68 @@ namespace MigrationRoadmap.Forms
             }
         }
 
+        private List<int> openDocuments()
+        {
+			OpenFileDialog openFileDialog = new OpenFileDialog();
+			openFileDialog.Multiselect = true;
+			openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif;*.tiff";
+
+			if (openFileDialog.ShowDialog() == DialogResult.OK)
+			{
+				string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $@"..\..\..\MigrationRoadmap\Data\{repatriateViewModel.Repatriate.Id}");
+				string destinationDirectory = Path.GetFullPath(path);
+
+				foreach (string filePath in openFileDialog.FileNames)
+				{
+					string newFilePath = Path.Combine(destinationDirectory, Path.GetFileName(filePath));
+					File.Copy(filePath, newFilePath, true);
+				}
+                return repatriateViewModel.SaveDocumentsInfo(openFileDialog.FileNames);
+			}
+            return null;
+		}
+
         private void buttonApplication1_Click(object sender, EventArgs e)
         {
-            repatriateViewModel.ApplyApplication(ServiceType.RelocationProgram);
-        }
+            var listId = openDocuments();
+            if (listId != null)
+            {
+				repatriateViewModel.ApplyApplication(ServiceType.RelocationProgram, listId);
+                applicationInfoPanel.Visible = true;
+                showDocuments(listId);
+				RefreshDynamicButtons();
+			}
+		}
 
         private void buttonApplication2_Click(object sender, EventArgs e)
         {
-            repatriateViewModel.ApplyApplication(ServiceType.CompensationExpenses);
-        }
+			var listId = openDocuments();
+			if (listId != null)
+			{
+				repatriateViewModel.ApplyApplication(ServiceType.CompensationExpenses, listId);
+				applicationInfoPanel.Visible = true;
+				showDocuments(listId);
+                RefreshDynamicButtons();
+			}
+		}
 
-        private void mouseClick_accInfoPanel(object sender, MouseEventArgs e)
+		private void RefreshDynamicButtons()
+		{
+			// Очищаем содержимое панелей
+			activeApplications.Controls.Clear();
+			archiveApplications.Controls.Clear();
+
+			// Пересоздаем кнопки
+			CreateDynamicButtons(activeApplications, true);
+			CreateDynamicButtons(archiveApplications, false);
+		}
+
+		private void mouseClick_accInfoPanel(object sender, MouseEventArgs e)
         {
             hideAccInfoPanel();
             hidePanelApplications();
-        }
+            hideApplicationInfoPanel();
+		}
 
         protected override void WndProc(ref Message m)
         {
@@ -172,8 +225,53 @@ namespace MigrationRoadmap.Forms
             {
                 hideAccInfoPanel();
                 hidePanelApplications();
-            }
+                hideApplicationInfoPanel();
+			}
             base.WndProc(ref m);
         }
-    }
+
+		private void showDocuments(List<int> listId)
+		{
+            string link = null;
+			JToken document = null;
+            string pathToPhoto = null;
+			string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Data\Documents.json");
+			string filePath = Path.GetFullPath(path);
+
+			StreamReader reader = File.OpenText(filePath);
+			JArray json = (JArray)JToken.ReadFrom(new JsonTextReader(reader));
+			reader.Close();
+
+			foreach (var id in listId)
+			{
+				document = json.FirstOrDefault(doc => (int)doc["Id"] == id);
+				link = document["Link"].ToString();
+
+				pathToPhoto = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $@"..\..\..\MigrationRoadmap\Data\{link}");
+
+				var pictureBox = new PictureBox
+				{
+					SizeMode = PictureBoxSizeMode.Zoom,
+					Image = Image.FromFile(pathToPhoto),
+					Width = 500,
+					Height = 500,
+					Dock = DockStyle.Top,
+				};
+
+				docsPanel.Controls.Add(pictureBox);
+			}
+		}
+
+		private void hideApplicationInfoPanel()
+		{
+			var cursorX = Cursor.Position.X - this.Location.X - Cursor.Size.Width;
+			var cursorY = Cursor.Position.Y - this.Location.Y - Cursor.Size.Height;
+			if (applicationInfoPanel.Visible
+			&& ((cursorX < applicationInfoPanel.Location.X || cursorX > applicationInfoPanel.Location.X + applicationInfoPanel.Width)
+			|| (cursorY < applicationInfoPanel.Location.Y || cursorY > applicationInfoPanel.Location.Y + applicationInfoPanel.Height)))
+			{
+				applicationInfoPanel.Visible = false;
+			}
+		}
+	}
 }

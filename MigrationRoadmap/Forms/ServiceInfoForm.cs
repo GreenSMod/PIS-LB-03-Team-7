@@ -16,6 +16,7 @@ namespace MigrationRoadmap.Forms
 	public partial class ServiceInfoForm : Form
 	{
 		private AdministratorViewModel administratorViewModel;
+		private ServiceModel service;
 
 		public ServiceInfoForm(ServiceModel service, AdministratorViewModel viewModel)
 		{
@@ -24,6 +25,7 @@ namespace MigrationRoadmap.Forms
 			serviceNameLabel.Text = service.ServiceName;
 			descriptionLabel.Text = service.Description;
 			deadlineLabel.Text = administratorViewModel.Regulations.FirstOrDefault(r => r.Id == service.RegulationId).Deadline;
+			this.service = service;
         }
 
 		private void buttonReturn_Click(object sender, EventArgs e)
@@ -60,7 +62,7 @@ namespace MigrationRoadmap.Forms
 			}
 			else
 			{
-				administratorViewModel.ChangeService(serviceNameField.Text, descriptionField.Text);
+				administratorViewModel.ChangeService(service.Id, serviceNameField.Text, descriptionField.Text);
 			}
 		}
 
@@ -72,7 +74,7 @@ namespace MigrationRoadmap.Forms
 			}
 			else
 			{
-				administratorViewModel.ChangeRegulation(deadlineField.Text);
+				administratorViewModel.ChangeRegulation(service.RegulationId, deadlineField.Text);
 			}
 		}
 	}

@@ -1,5 +1,6 @@
 ﻿using MigrationRoadmap.Models;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -37,14 +38,44 @@ namespace MigrationRoadmap.ViewModels
 		//	return Services;
 		//}
 
-		public void ChangeService(string newName, string newDescription)
+		public void ChangeService(int serviceId, string newName, string newDescription)
 		{
+			string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Data\Services.json");
+			string filePath = Path.GetFullPath(path);
 
+			StreamReader reader = File.OpenText(filePath);
+			JArray json = (JArray)JToken.ReadFrom(new JsonTextReader(reader));
+			reader.Close();
+
+			JObject service = (JObject)json[serviceId - 1];
+
+			service["ServiceName"] = newName;
+			service["Description"] = newDescription;
+
+			var serviceToUpdate = Services.FirstOrDefault(s => s.Id == serviceId);
+			serviceToUpdate.ServiceName = newName;
+			serviceToUpdate.Description = newDescription;
+
+			File.WriteAllText(filePath, json.ToString());
 		}
 
-		public void ChangeRegulation(string newDeadline)
+		public void ChangeRegulation(int regulationId, string newDeadline)
 		{
+			string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Data\Regulations.json");
+			string filePath = Path.GetFullPath(path);
 
+			StreamReader reader = File.OpenText(filePath);
+			JArray json = (JArray)JToken.ReadFrom(new JsonTextReader(reader));
+			reader.Close();
+
+			JObject service = (JObject)json[regulationId - 1];
+
+			service["Deadline"] = newDeadline;
+
+			var regulationToUpdate = Regulations.FirstOrDefault(s => s.Id == regulationId);
+			regulationToUpdate.Deadline = newDeadline;
+
+			File.WriteAllText(filePath, json.ToString());
 		}
 	}
 }

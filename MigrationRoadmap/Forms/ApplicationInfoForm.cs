@@ -1,5 +1,7 @@
 ﻿using MigrationRoadmap.Models;
 using MigrationRoadmap.ViewModels;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,8 +36,15 @@ namespace MigrationRoadmap.Forms
 			//repatriateViewModel = new RepatriateViewModel(user);
 			serviceTypeLabel.Text = application.ServiceType.ToString();
 			statusLabel.Text = application.ApplicationStatus.ToString();
-			translateForUser();
+			translateForUser(application);
 			showDocuments(application);
+			if (application.ApplicationStatus == ApplicationStatus.Rejected)
+			{
+				rejectionLabel.Visible = true;
+				rejectionReasonLabel.Text = application.RejectReason;
+				rejectionReasonLabel.Visible = true;
+			}
+			//this.application = application;
 		}
 
 		public ApplicationInfoForm(ApplicationModel application, MigrationSpecialistViewModel viewModel) : this(application)
@@ -79,21 +88,31 @@ namespace MigrationRoadmap.Forms
             reasonLabel.Visible = true;
         }
 
-		private void translateForUser()
+		private void translateForUser(ApplicationModel application)
 		{
-			string st = "";
+			var id = (int)application.ServiceType + 1;
+			string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Data\Services.json");
+			string filePath = Path.GetFullPath(path);
 
-			switch (serviceTypeLabel.Text)
-			{
-				case "RelocationProgram":
-					st = "на запись для постановки на учёт в качестве участника Государственной программы переселения соотечественников";
-					break;
-				case "CompensationExpenses":
-					st = "на компенсацию расходов по найму жилья";
-					break;
-			}
+			StreamReader reader = File.OpenText(filePath);
+			JArray json = (JArray)JToken.ReadFrom(new JsonTextReader(reader));
+			reader.Close();
 
-			serviceTypeLabel.Text = $"Заявка {st}";
+			var service = json.FirstOrDefault(ser => (int)ser["Id"] == id);
+			var st = service["ServiceName"].ToString();
+			serviceTypeLabel.Text = $"{st}";
+
+			//string st = "";
+			//switch (serviceTypeLabel.Text)
+			//{
+			//	case "RelocationProgram":
+			//		st = "на запись для постановки на учёт в качестве участника Государственной программы переселения соотечественников";
+			//		break;
+			//	case "CompensationExpenses":
+			//		st = "на компенсацию расходов по найму жилья";
+			//		break;
+			//}
+			//serviceTypeLabel.Text = $"Заявка {st}";
 
 			string s = "";
 
@@ -115,7 +134,7 @@ namespace MigrationRoadmap.Forms
 
 		private void showDocuments(ApplicationModel application)
 		{
-			
+
 			var documents = application.Documents;
 
 			if (documents != null)

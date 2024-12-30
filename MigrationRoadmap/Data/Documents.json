@@ -1,12 +1,12 @@
 [
-	{
-		"Id": 1,
-		"DocumentType": "Passport",
-		"Link": "\\1\\1.png"
-	},
-	{
-		"Id": 2,
-		"DocumentType": "Passport",
-		"Link": "\\1\\2.jpg"
-	}
+  {
+    "Id": 1,
+    "DocumentType": "Passport",
+    "Link": "\\1\\1.png"
+  },
+  {
+    "Id": 2,
+    "DocumentType": "Passport",
+    "Link": "\\1\\2.jpg"
+  }
 ]
