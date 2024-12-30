@@ -51,10 +51,10 @@ namespace MigrationRoadmap
                     roleForm = new RepatriateMainForm(user);
 					break;
 				case RoleName.MigrationSpecialist:
-					roleForm = new MigrationSpecialistConsiderForm();
+					roleForm = new MigrationSpecialistConsiderForm(user);
 					break;
 				case RoleName.Administrator:
-					roleForm = new ServicesForm();
+					roleForm = new ServicesForm(user);
 					break;
 			}
 

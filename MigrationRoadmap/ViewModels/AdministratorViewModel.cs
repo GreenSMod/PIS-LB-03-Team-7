@@ -10,10 +10,11 @@ namespace MigrationRoadmap.ViewModels
 	internal class AdministratorViewModel
 	{
 		private List<ServiceModel> services;
+		public AdministratorModel Administrator { get; private set; }
 
-		public AdministratorViewModel()
+		public AdministratorViewModel(UserModel user)
 		{
-
+			Administrator = new AdministratorModel(user) { };
 		}
 
 		public List<ServiceModel> GetServices()

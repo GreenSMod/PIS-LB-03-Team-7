@@ -23,7 +23,8 @@ namespace MigrationRoadmap.Forms
 			repatriateViewModel = new RepatriateViewModel(user);
             nameLabel.Text = user.FullName;
             emailLabel.Text = user.Email;
-            CreateDynamicButtons();
+            CreateDynamicButtons(activeApplications, ApplicationStatus.UnderConsideration);
+			CreateDynamicButtons(archiveApplications, ApplicationStatus.Approved);
 		}
 
 		public void UpdateRepatriate(RepatriateModel repatriate)
@@ -71,13 +72,24 @@ namespace MigrationRoadmap.Forms
             this.Hide();
         }
 
-		private void CreateDynamicButtons()
+		private void CreateDynamicButtons(TabPage panel, ApplicationStatus status)
 		{
 			var applications = repatriateViewModel.Repatriate.Applications;
 
 			if (applications != null)
 			{
-				applications = applications.Where(app => app.ApplicationStatus == ApplicationStatus.UnderConsideration).ToList();
+				switch(status)
+				{
+					case ApplicationStatus.UnderConsideration:
+						applications = applications
+							.Where(app => app.ApplicationStatus == ApplicationStatus.UnderConsideration).ToList();
+						break;
+					case ApplicationStatus.Approved:
+						applications = applications
+							.Where(app => app.ApplicationStatus == ApplicationStatus.Approved && app.ApplicationStatus == ApplicationStatus.Rejected).ToList();
+						break;
+				}
+				
 
 				foreach (var application in applications)
 				{
@@ -102,7 +114,7 @@ namespace MigrationRoadmap.Forms
                     button.Click += buttonApllication_Click;
 
 					this.Controls.Add(button);
-					activeApplications.Controls.Add(button);
+					panel.Controls.Add(button);
 				}
 			}
 		}

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MigrationRoadmap.ViewModels
 {
-	internal class RepatriateViewModel
+	public class RepatriateViewModel
 	{
 		public RepatriateModel Repatriate { get; private set; }
 

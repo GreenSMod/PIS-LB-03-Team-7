@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MigrationRoadmap.Models
 {
-	internal class RegulationModel
+	public class RegulationModel
 	{
 		public int Id;
 		public string Deadline;
