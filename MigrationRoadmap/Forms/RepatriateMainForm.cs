@@ -273,5 +273,10 @@ namespace MigrationRoadmap.Forms
 				applicationInfoPanel.Visible = false;
 			}
 		}
-	}
+
+        private void activeApplications_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

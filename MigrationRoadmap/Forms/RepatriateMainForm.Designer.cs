@@ -52,6 +52,7 @@ namespace MigrationRoadmap.Forms
             this.buttonApplication2 = new System.Windows.Forms.Button();
             this.buttonApplication1 = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.accInfoPanel.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.applicationInfoPanel.SuspendLayout();
@@ -143,21 +144,22 @@ namespace MigrationRoadmap.Forms
             // 
             this.activeApplications.AutoScroll = true;
             this.activeApplications.Font = new System.Drawing.Font("Liberation Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.activeApplications.Location = new System.Drawing.Point(4, 40);
+            this.activeApplications.Location = new System.Drawing.Point(4, 39);
             this.activeApplications.Name = "activeApplications";
             this.activeApplications.Padding = new System.Windows.Forms.Padding(3);
-            this.activeApplications.Size = new System.Drawing.Size(942, 556);
+            this.activeApplications.Size = new System.Drawing.Size(942, 557);
             this.activeApplications.TabIndex = 0;
             this.activeApplications.Text = "Активные заявки";
             this.activeApplications.UseVisualStyleBackColor = true;
+            this.activeApplications.Click += new System.EventHandler(this.activeApplications_Click);
             // 
             // archiveApplications
             // 
             this.archiveApplications.AutoScroll = true;
-            this.archiveApplications.Location = new System.Drawing.Point(4, 40);
+            this.archiveApplications.Location = new System.Drawing.Point(4, 39);
             this.archiveApplications.Name = "archiveApplications";
             this.archiveApplications.Padding = new System.Windows.Forms.Padding(3);
-            this.archiveApplications.Size = new System.Drawing.Size(942, 556);
+            this.archiveApplications.Size = new System.Drawing.Size(942, 551);
             this.archiveApplications.TabIndex = 1;
             this.archiveApplications.Text = "Архивные заявки";
             this.archiveApplications.UseVisualStyleBackColor = true;
@@ -263,6 +265,15 @@ namespace MigrationRoadmap.Forms
             // 
             this.openFileDialog.FileName = "openFileDialog1";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(15, 86);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(950, 608);
+            this.panel1.TabIndex = 7;
+            // 
             // RepatriateMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,6 +285,7 @@ namespace MigrationRoadmap.Forms
             this.Controls.Add(this.buttonAccountInfo);
             this.Controls.Add(this.buttonApplications);
             this.Controls.Add(this.accInfoPanel);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "RepatriateMainForm";
@@ -294,8 +306,8 @@ namespace MigrationRoadmap.Forms
         private void ReinitializeComponent()
 		{
             this.accInfoPanel.BringToFront();
-
-		}
+            this.panel1.BringToFront();
+        }
 
         private System.Windows.Forms.Button buttonApplications;
 		private System.Windows.Forms.Panel accInfoPanel;
@@ -318,5 +330,6 @@ namespace MigrationRoadmap.Forms
 		private Label label1;
 		private Label label3;
 		private Label label2;
-	}
+        private Panel panel1;
+    }
 }

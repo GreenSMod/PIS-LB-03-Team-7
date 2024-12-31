@@ -172,25 +172,25 @@ namespace MigrationRoadmap.Forms
             // checkedLabel
             // 
             this.checkedLabel.AutoSize = true;
-            this.checkedLabel.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkedLabel.Font = new System.Drawing.Font("Liberation Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkedLabel.Location = new System.Drawing.Point(24, 604);
             this.checkedLabel.Name = "checkedLabel";
             this.checkedLabel.Size = new System.Drawing.Size(193, 36);
             this.checkedLabel.TabIndex = 14;
             this.checkedLabel.Text = "Проверил(а):";
-            this.checkedLabel.Visible = false;
+            this.checkedLabel.Visible = true;
             // 
             // nameSpecialistLabel
             // 
             this.nameSpecialistLabel.AutoSize = true;
-            this.nameSpecialistLabel.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameSpecialistLabel.Font = new System.Drawing.Font("Liberation Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.nameSpecialistLabel.Location = new System.Drawing.Point(27, 663);
             this.nameSpecialistLabel.MaximumSize = new System.Drawing.Size(400, 0);
             this.nameSpecialistLabel.Name = "nameSpecialistLabel";
             this.nameSpecialistLabel.Size = new System.Drawing.Size(210, 27);
             this.nameSpecialistLabel.TabIndex = 15;
             this.nameSpecialistLabel.Text = "nameSpecialistLabel";
-            this.nameSpecialistLabel.Visible = false;
+            this.nameSpecialistLabel.Visible = true;
             // 
             // ApplicationInfoForm
             // 

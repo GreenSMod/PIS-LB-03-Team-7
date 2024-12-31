@@ -39,6 +39,11 @@ namespace MigrationRoadmap.Forms
 			statusLabel.Text = application.ApplicationStatus.ToString();
 			translateForUser(application);
 			showDocuments(application);
+			if (application.ApplicationStatus == ApplicationStatus.UnderConsideration)
+			{
+                checkedLabel.Visible = false;
+                nameSpecialistLabel.Visible = false;
+            }
 			if (application.ApplicationStatus == ApplicationStatus.Rejected)
 			{
 				rejectionLabel.Visible = true;
@@ -59,8 +64,8 @@ namespace MigrationRoadmap.Forms
 				var user = json.FirstOrDefault(u => (int)u["Id"] == id);
 				nameSpecialistLabel.Text = user["FullName"].ToString();
 
-				checkedLabel.Visible = true;
-				nameSpecialistLabel.Visible = true;
+				//checkedLabel.Visible = true;
+				//nameSpecialistLabel.Visible = true;
 			}
 		}
 
