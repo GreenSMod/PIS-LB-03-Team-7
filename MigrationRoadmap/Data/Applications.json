@@ -4,7 +4,10 @@
     "RepatriateId": 3,
     "ApplicationStatus": "Approved",
     "ServiceType": "RelocationProgram",
-    "Documents": [1, 2],
+    "Documents": [
+      1,
+      2
+    ],
     "MigrationSpecialistId": 2,
     "RejectReason": null
   },
@@ -22,8 +25,11 @@
     "RepatriateId": 3,
     "ApplicationStatus": "UnderConsideration",
     "ServiceType": "CompensationExpenses",
-    "Documents": [1, 2],
+    "Documents": [
+      1,
+      2
+    ],
     "MigrationSpecialistId": 0,
     "RejectReason": null
-  },
+  }
 ]

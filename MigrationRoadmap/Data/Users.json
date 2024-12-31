@@ -12,13 +12,5 @@
     "Password": "password",
     "FullName": "Русских Демьян Всеволодович",
     "Role": "MigrationSpecialist"
-  },
-  {
-    "Id": 3,
-    "Email": "ivanov@mail",
-    "Password": "password",
-    "FullName": "Иванов Иван Иванович",
-    "Role": "Repatriate",
-    "Passport": "2929 441391 УМВД России по Тюменской области 681-741 14.10.1976"
-  },
+  }
 ]
