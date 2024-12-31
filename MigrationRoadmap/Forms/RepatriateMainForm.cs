@@ -22,6 +22,7 @@ namespace MigrationRoadmap.Forms
 	public partial class RepatriateMainForm : Form
 	{
 		private RepatriateViewModel repatriateViewModel;
+        public ServiceType serviceType;
 
 		public RepatriateMainForm(UserModel user)
 		{
@@ -179,26 +180,60 @@ namespace MigrationRoadmap.Forms
 
         private void buttonApplication1_Click(object sender, EventArgs e)
         {
-            var listId = openDocuments();
-            if (listId != null)
-            {
-				repatriateViewModel.ApplyApplication(ServiceType.RelocationProgram, listId);
-                applicationInfoPanel.Visible = true;
-                showDocuments(listId);
-				RefreshDynamicButtons();
-			}
+            serviceType = ServiceType.RelocationProgram;
+			loadInfoService(ServiceType.RelocationProgram);
+			serviceInfoPanel.Visible = true;
 		}
 
         private void buttonApplication2_Click(object sender, EventArgs e)
         {
+			serviceType = ServiceType.CompensationExpenses;
+			loadInfoService(ServiceType.RelocationProgram);
+			serviceInfoPanel.Visible = true;
+		}
+
+		private void buttonGetFilesSend_Click(object sender, EventArgs e)
+		{
 			var listId = openDocuments();
 			if (listId != null)
 			{
-				repatriateViewModel.ApplyApplication(ServiceType.CompensationExpenses, listId);
+				repatriateViewModel.ApplyApplication(serviceType, listId);
 				applicationInfoPanel.Visible = true;
 				showDocuments(listId);
-                RefreshDynamicButtons();
+				RefreshDynamicButtons();
 			}
+			serviceInfoPanel.Visible = false;
+		}
+
+        private void loadInfoService(ServiceType serviceType)
+        {
+            var id = (int)serviceType + 1;
+
+			string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Data\Services.json");
+            string filePath = Path.GetFullPath(path);
+
+            StreamReader reader = File.OpenText(filePath);
+            JArray json = (JArray)JToken.ReadFrom(new JsonTextReader(reader));
+            reader.Close();
+
+            var service = json.FirstOrDefault(doc => (int)doc["Id"] == id);
+            var serviceName = service["ServiceName"].ToString();
+			var description = service["Description"].ToString();
+            var regulationId = (int)service["RegulationId"];
+
+			string path2 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Data\Regulations.json");
+			string filePath2 = Path.GetFullPath(path2);
+
+			StreamReader reader2 = File.OpenText(filePath2);
+			JArray json2 = (JArray)JToken.ReadFrom(new JsonTextReader(reader2));
+			reader.Close();
+
+			var regulation = json2.FirstOrDefault(doc => (int)doc["Id"] == regulationId);
+			var deadline = regulation["Deadline"].ToString();
+
+            serviceNameLabel.Text = serviceName;
+            descriptionLabel.Text = description;
+            deadlineLabel.Text = deadline;
 		}
 
 		private void RefreshDynamicButtons()
@@ -278,5 +313,7 @@ namespace MigrationRoadmap.Forms
         {
 
         }
-    }
+
+		
+	}
 }
