@@ -16,7 +16,7 @@ namespace MigrationRoadmap.Models
 		public string Password;
 		public string FullName;
 		public RoleName Role;
-        // поля Репатрианта
+        // поле Репатрианта
         public string Passport;
 
 

@@ -159,7 +159,7 @@ namespace MigrationRoadmap.Forms
             this.archiveApplications.Location = new System.Drawing.Point(4, 39);
             this.archiveApplications.Name = "archiveApplications";
             this.archiveApplications.Padding = new System.Windows.Forms.Padding(3);
-            this.archiveApplications.Size = new System.Drawing.Size(942, 551);
+            this.archiveApplications.Size = new System.Drawing.Size(942, 557);
             this.archiveApplications.TabIndex = 1;
             this.archiveApplications.Text = "Архивные заявки";
             this.archiveApplications.UseVisualStyleBackColor = true;
@@ -269,10 +269,12 @@ namespace MigrationRoadmap.Forms
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Enabled = false;
             this.panel1.Location = new System.Drawing.Point(15, 86);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(950, 608);
             this.panel1.TabIndex = 7;
+            this.panel1.Visible = false;
             // 
             // RepatriateMainForm
             // 

@@ -2,10 +2,13 @@
   {
     "Id": 1,
     "RepatriateId": 3,
-    "ApplicationStatus": "Approved",
+    "ApplicationStatus": "UnderConsideration",
     "ServiceType": "RelocationProgram",
-    "Documents": [1, 2],
-    "MigrationSpecialistId": 2,
+    "Documents": [
+      1,
+      2
+    ],
+    "MigrationSpecialistId": 0,
     "RejectReason": null
   },
   {
@@ -20,10 +23,13 @@
   {
     "Id": 3,
     "RepatriateId": 3,
-    "ApplicationStatus": "UnderConsideration",
+    "ApplicationStatus": "Approved",
     "ServiceType": "CompensationExpenses",
-    "Documents": [1, 2],
-    "MigrationSpecialistId": 0,
+    "Documents": [
+      1,
+      2
+    ],
+    "MigrationSpecialistId": 2,
     "RejectReason": null
-  },
+  }
 ]
