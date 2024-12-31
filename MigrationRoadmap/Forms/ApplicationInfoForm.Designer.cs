@@ -44,6 +44,8 @@ namespace MigrationRoadmap.Forms
             this.reasonLabel = new System.Windows.Forms.Label();
             this.rejectionLabel = new System.Windows.Forms.Label();
             this.rejectionReasonLabel = new System.Windows.Forms.Label();
+            this.checkedLabel = new System.Windows.Forms.Label();
+            this.nameSpecialistLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonReturn
@@ -167,11 +169,36 @@ namespace MigrationRoadmap.Forms
             this.rejectionReasonLabel.Text = "rejectionReasonLabel";
             this.rejectionReasonLabel.Visible = false;
             // 
+            // checkedLabel
+            // 
+            this.checkedLabel.AutoSize = true;
+            this.checkedLabel.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkedLabel.Location = new System.Drawing.Point(24, 604);
+            this.checkedLabel.Name = "checkedLabel";
+            this.checkedLabel.Size = new System.Drawing.Size(193, 36);
+            this.checkedLabel.TabIndex = 14;
+            this.checkedLabel.Text = "Проверил(а):";
+            this.checkedLabel.Visible = false;
+            // 
+            // nameSpecialistLabel
+            // 
+            this.nameSpecialistLabel.AutoSize = true;
+            this.nameSpecialistLabel.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameSpecialistLabel.Location = new System.Drawing.Point(27, 663);
+            this.nameSpecialistLabel.MaximumSize = new System.Drawing.Size(400, 0);
+            this.nameSpecialistLabel.Name = "nameSpecialistLabel";
+            this.nameSpecialistLabel.Size = new System.Drawing.Size(210, 27);
+            this.nameSpecialistLabel.TabIndex = 15;
+            this.nameSpecialistLabel.Text = "nameSpecialistLabel";
+            this.nameSpecialistLabel.Visible = false;
+            // 
             // ApplicationInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 761);
+            this.Controls.Add(this.nameSpecialistLabel);
+            this.Controls.Add(this.checkedLabel);
             this.Controls.Add(this.rejectionReasonLabel);
             this.Controls.Add(this.rejectionLabel);
             this.Controls.Add(this.reasonLabel);
@@ -218,5 +245,7 @@ namespace MigrationRoadmap.Forms
         private Label reasonLabel;
 		private Label rejectionLabel;
 		private Label rejectionReasonLabel;
+		private Label checkedLabel;
+		private Label nameSpecialistLabel;
 	}
 }
