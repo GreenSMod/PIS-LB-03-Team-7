@@ -39,7 +39,7 @@ namespace MigrationRoadmap.Forms
 					{
 						Text = $"#{service.Id} {service.ServiceName}",
 						Dock = DockStyle.Top,
-						Height = 40,
+						Height = 70,
 						Name = service.Id.ToString()
 					};
 					button.Click += buttonService_Click;

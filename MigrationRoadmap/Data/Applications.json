@@ -1,59 +1,29 @@
 [
   {
     "Id": 1,
-    "RepatriateId": 1,
-    "ApplicationStatus": 0,
-    "ServiceType": 0,
-    "Documents": [
-      1,
-      2
-    ],
-    "MigrationSpecialistId": 0,
+    "RepatriateId": 3,
+    "ApplicationStatus": "Approved",
+    "ServiceType": "RelocationProgram",
+    "Documents": [1, 2],
+    "MigrationSpecialistId": 2,
     "RejectReason": null
   },
   {
     "Id": 2,
-    "RepatriateId": 1,
-    "ApplicationStatus": 0,
-    "ServiceType": 1,
+    "RepatriateId": 3,
+    "ApplicationStatus": "Rejected",
+    "ServiceType": "CompensationExpenses",
     "Documents": [],
     "MigrationSpecialistId": 2,
-    "RejectReason": null
+    "RejectReason": "Не прикреплены документы"
   },
   {
     "Id": 3,
-    "RepatriateId": 1,
-    "ApplicationStatus": "Rejected",
-    "ServiceType": 0,
-    "Documents": [],
-    "MigrationSpecialistId": 2,
-    "RejectReason": "Отсутствуют документы"
-  },
-  {
-    "Id": 4,
-    "RepatriateId": 1,
-    "ApplicationStatus": 1,
-    "ServiceType": 1,
-    "Documents": [],
-    "MigrationSpecialistId": 2,
+    "RepatriateId": 3,
+    "ApplicationStatus": "UnderConsideration",
+    "ServiceType": "CompensationExpenses",
+    "Documents": [1, 2],
+    "MigrationSpecialistId": 0,
     "RejectReason": null
   },
-  {
-    "Id": 5,
-    "RepatriateId": 1,
-    "ApplicationStatus": 2,
-    "ServiceType": 0,
-    "Documents": [],
-    "MigrationSpecialistId": 2,
-    "RejectReason": "ПРИЧИНА"
-  },
-  {
-    "Id": 6,
-    "RepatriateId": 1,
-    "ApplicationStatus": 0,
-    "ServiceType": 0,
-    "Documents": [],
-    "MigrationSpecialistId": 0,
-    "RejectReason": ""
-  }
 ]

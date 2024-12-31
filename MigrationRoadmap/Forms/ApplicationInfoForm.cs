@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 using Image = System.Drawing.Image;
+using System.Diagnostics;
 
 namespace MigrationRoadmap.Forms
 {
@@ -86,6 +87,7 @@ namespace MigrationRoadmap.Forms
 			reasonField.Enabled = true;
 			reasonField.Visible = true;
             reasonLabel.Visible = true;
+
         }
 
 		private void translateForUser(ApplicationModel application)
@@ -149,9 +151,15 @@ namespace MigrationRoadmap.Forms
 						Width = 500,
 						Height = 500,
 						Dock = DockStyle.Top,
-					};
+						Name = document.Link
+                    };
 
-					docsPanel.Controls.Add(pictureBox);
+                    pictureBox.MouseClick += new MouseEventHandler((o, a) => 
+					{
+                        Process.Start(path);
+                    });
+
+                    docsPanel.Controls.Add(pictureBox);
 				}
 		}
 

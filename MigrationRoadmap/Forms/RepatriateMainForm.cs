@@ -258,7 +258,7 @@ namespace MigrationRoadmap.Forms
 					Dock = DockStyle.Top,
 				};
 
-				docsPanel.Controls.Add(pictureBox);
+                docsPanel.Controls.Add(pictureBox);
 			}
 		}
 

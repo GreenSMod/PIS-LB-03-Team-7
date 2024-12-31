@@ -40,7 +40,7 @@ namespace MigrationRoadmap.Forms
 			// 
 			// emailField
 			// 
-			this.emailField.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
+			this.emailField.Font = new System.Drawing.Font("Liberation Serif", 27.75F);
 			this.emailField.Location = new System.Drawing.Point(80, 80);
 			this.emailField.Name = "emailField";
 			this.emailField.Size = new System.Drawing.Size(400, 49);
@@ -48,7 +48,7 @@ namespace MigrationRoadmap.Forms
 			// 
 			// passField
 			// 
-			this.passField.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
+			this.passField.Font = new System.Drawing.Font("Liberation Serif", 27.75F);
 			this.passField.Location = new System.Drawing.Point(80, 370);
 			this.passField.Name = "passField";
 			this.passField.Size = new System.Drawing.Size(400, 49);
@@ -56,7 +56,7 @@ namespace MigrationRoadmap.Forms
 			// 
 			// buttonUpdateAccount
 			// 
-			this.buttonUpdateAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F);
+			this.buttonUpdateAccount.Font = new System.Drawing.Font("Liberation Serif", 27.75F);
 			this.buttonUpdateAccount.Location = new System.Drawing.Point(80, 520);
 			this.buttonUpdateAccount.Name = "buttonUpdateAccount";
 			this.buttonUpdateAccount.Size = new System.Drawing.Size(221, 50);
@@ -68,7 +68,7 @@ namespace MigrationRoadmap.Forms
 			// nameLabel
 			// 
 			this.nameLabel.AutoSize = true;
-			this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+			this.nameLabel.Font = new System.Drawing.Font("Liberation Serif", 20.25F);
 			this.nameLabel.Location = new System.Drawing.Point(80, 170);
 			this.nameLabel.Name = "nameLabel";
 			this.nameLabel.Size = new System.Drawing.Size(147, 31);
@@ -78,7 +78,7 @@ namespace MigrationRoadmap.Forms
 			// passportLabel
 			// 
 			this.passportLabel.AutoSize = true;
-			this.passportLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+			this.passportLabel.Font = new System.Drawing.Font("Liberation Serif", 15.75F);
 			this.passportLabel.ForeColor = System.Drawing.SystemColors.GrayText;
 			this.passportLabel.Location = new System.Drawing.Point(80, 240);
 			this.passportLabel.Name = "passportLabel";
@@ -88,7 +88,7 @@ namespace MigrationRoadmap.Forms
 			// 
 			// buttonReturn
 			// 
-			this.buttonReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.buttonReturn.Font = new System.Drawing.Font("Liberation Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.buttonReturn.Location = new System.Drawing.Point(361, 520);
 			this.buttonReturn.Name = "buttonReturn";
 			this.buttonReturn.Size = new System.Drawing.Size(200, 50);

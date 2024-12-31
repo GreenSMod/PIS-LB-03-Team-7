@@ -21,7 +21,8 @@ namespace MigrationRoadmap.Forms
 		public ServiceInfoForm(ServiceModel service, AdministratorViewModel viewModel)
 		{
 			InitializeComponent();
-			administratorViewModel = viewModel;
+			ReinitializeComponent();
+            administratorViewModel = viewModel;
 			serviceNameLabel.Text = service.ServiceName;
 			descriptionLabel.Text = service.Description;
 			deadlineLabel.Text = administratorViewModel.Regulations.FirstOrDefault(r => r.Id == service.RegulationId).Deadline;
