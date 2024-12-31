@@ -8,17 +8,5 @@
     "Id": 2,
     "DocumentType": "Passport",
     "Link": "\\3\\2.jpg"
-  },
-  {
-    "Id": 3,
-    "RepatriateId": 3,
-    "DocumentType": "Passport",
-    "Link": "\\3\\p.jpg"
-  },
-  {
-    "Id": 4,
-    "RepatriateId": 3,
-    "DocumentType": "Passport",
-    "Link": "\\3\\p.jpg"
   }
 ]

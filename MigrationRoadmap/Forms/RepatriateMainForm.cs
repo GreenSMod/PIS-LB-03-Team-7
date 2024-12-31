@@ -183,14 +183,16 @@ namespace MigrationRoadmap.Forms
             serviceType = ServiceType.RelocationProgram;
 			loadInfoService(ServiceType.RelocationProgram);
 			serviceInfoPanel.Visible = true;
-		}
+            panelApplications.Visible = false;
+        }
 
         private void buttonApplication2_Click(object sender, EventArgs e)
         {
 			serviceType = ServiceType.CompensationExpenses;
-			loadInfoService(ServiceType.RelocationProgram);
+			loadInfoService(ServiceType.CompensationExpenses);
 			serviceInfoPanel.Visible = true;
-		}
+            panelApplications.Visible = false;
+        }
 
 		private void buttonGetFilesSend_Click(object sender, EventArgs e)
 		{

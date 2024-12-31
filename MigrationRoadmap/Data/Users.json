@@ -12,5 +12,12 @@
     "Password": "password",
     "FullName": "Русских Демьян Всеволодович",
     "Role": "MigrationSpecialist"
+  },
+  {
+    "Id": 3,
+    "Email": "ivanov@mail",
+    "Password": "password",
+    "FullName": "Иванов Иван Иванович",
+    "Role": "Repatriate"
   }
 ]
