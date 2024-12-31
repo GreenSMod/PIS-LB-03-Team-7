@@ -45,6 +45,22 @@ namespace MigrationRoadmap.Forms
 				rejectionReasonLabel.Visible = true;
 			}
 			//this.application = application;
+			if (application.ApplicationStatus != ApplicationStatus.UnderConsideration)
+			{
+				var id = application.MigrationSpecialistId;
+				string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MigrationRoadmap\Data\Users.json");
+				string filePath = Path.GetFullPath(path);
+
+				StreamReader reader = File.OpenText(filePath);
+				JArray json = (JArray)JToken.ReadFrom(new JsonTextReader(reader));
+				reader.Close();
+
+				var user = json.FirstOrDefault(u => (int)u["Id"] == id);
+				nameSpecialistLabel.Text = user["FullName"].ToString();
+
+				checkedLabel.Visible = true;
+				nameSpecialistLabel.Visible = true;
+			}
 		}
 
 		public ApplicationInfoForm(ApplicationModel application, MigrationSpecialistViewModel viewModel) : this(application)
