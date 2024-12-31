@@ -84,7 +84,7 @@ namespace MigrationRoadmap.Forms
             this.accInfoPanel.Controls.Add(this.buttonLogout);
             this.accInfoPanel.Controls.Add(this.buttonChangeAccInfo);
             this.accInfoPanel.Controls.Add(this.emailLabel);
-            this.accInfoPanel.Location = new System.Drawing.Point(15, 55);
+            this.accInfoPanel.Location = new System.Drawing.Point(15, 56);
             this.accInfoPanel.Name = "accInfoPanel";
             this.accInfoPanel.Size = new System.Drawing.Size(188, 185);
             this.accInfoPanel.TabIndex = 2;
@@ -117,7 +117,7 @@ namespace MigrationRoadmap.Forms
             this.buttonChangeAccInfo.Font = new System.Drawing.Font("Liberation Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonChangeAccInfo.Location = new System.Drawing.Point(19, 76);
             this.buttonChangeAccInfo.Name = "buttonChangeAccInfo";
-            this.buttonChangeAccInfo.Size = new System.Drawing.Size(147, 29);
+            this.buttonChangeAccInfo.Size = new System.Drawing.Size(130, 29);
             this.buttonChangeAccInfo.TabIndex = 2;
             this.buttonChangeAccInfo.Text = "Редактировать";
             this.buttonChangeAccInfo.UseVisualStyleBackColor = true;
@@ -280,11 +280,10 @@ namespace MigrationRoadmap.Forms
             this.serviceInfoPanel.Controls.Add(this.buttonGetFilesSend);
             this.serviceInfoPanel.Controls.Add(this.label4);
             this.serviceInfoPanel.Controls.Add(this.descriptionLabel);
-            this.serviceInfoPanel.Controls.Add(this.accInfoPanel);
             this.serviceInfoPanel.Controls.Add(this.serviceNameLabel);
-            this.serviceInfoPanel.Location = new System.Drawing.Point(12, 64);
+            this.serviceInfoPanel.Location = new System.Drawing.Point(15, 64);
             this.serviceInfoPanel.Name = "serviceInfoPanel";
-            this.serviceInfoPanel.Size = new System.Drawing.Size(953, 269);
+            this.serviceInfoPanel.Size = new System.Drawing.Size(956, 269);
             this.serviceInfoPanel.TabIndex = 7;
             this.serviceInfoPanel.Visible = false;
             // 
@@ -354,6 +353,7 @@ namespace MigrationRoadmap.Forms
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.buttonAccountInfo);
             this.Controls.Add(this.buttonApplications);
+            this.Controls.Add(this.accInfoPanel);
             this.Controls.Add(this.serviceInfoPanel);
             this.Controls.Add(this.applicationInfoPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -377,9 +377,9 @@ namespace MigrationRoadmap.Forms
 
         private void ReinitializeComponent()
 		{
-            this.accInfoPanel.BringToFront();
             this.applicationInfoPanel.BringToFront();
             this.serviceInfoPanel.BringToFront();
+            this.accInfoPanel.BringToFront();
         }
 
         private System.Windows.Forms.Button buttonApplications;
